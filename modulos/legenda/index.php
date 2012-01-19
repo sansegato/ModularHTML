@@ -1,1 +1,1 @@
-<p class="legend">The standard chunk</p>
+<p class="legend">The standard chunk a</p>
