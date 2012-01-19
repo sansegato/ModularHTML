@@ -1,0 +1,1 @@
+<p class="author">The standard chunk</p>
