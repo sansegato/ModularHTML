@@ -26,7 +26,7 @@ body {
 .modulo 					{ clear: both; overflow: hidden; border-bottom: dotted 1px #ccc; padding:1.5em 0; }
 .modulo .visualizacao		{ width: 65%; float: left; }
 .modulo .codigo 			{ width: 30%; float: right; }
-.modulo .codigo p			{ display:block; width:93%; padding: 0 1% 0 5%; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
+.modulo .codigo p			{ display:block; width:93%; padding: 0 1% 0 24px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .codigo p a,
 .nome-modulo a				{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
 .modulo .codigo p a:hover	{ background-color:#067f6c; color:#fff; }
