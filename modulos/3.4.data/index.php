@@ -1,1 +1,1 @@
-<p class="date">19/01/2012</p>
+<p class="date"><abbr title="2012-01-19">19/01/2012</abbr></p>
