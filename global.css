@@ -28,7 +28,7 @@ h1.logo				{ width:100%; display:block; text-align:center; padding:0 0 1% 0; mar
 .modulo.first				{ border-top: dotted 1px #ccc; }
 .modulo .visualizacao		{ width: 65%; float: left; }
 .modulo .info 				{ width: 30%; float: right; }
-.modulo .info p				{ display:block; width:93%; padding: 0 1% 0 5%; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
+.modulo .info p				{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
 .nome-modulo a				{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
 .modulo .info p a:hover		{ background-color:#067f6c; color:#fff; }
