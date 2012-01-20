@@ -10,4 +10,4 @@
 	SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "Código copiado para Área de Transferência";
 	SyntaxHighlighter.config.strings.print = "Imprimir";
 	SyntaxHighlighter.config.strings.help = "Sobre";
-</script>e
+</script>

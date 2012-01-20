@@ -8,7 +8,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/syntax/syntax.php'); ?>
 </head>
 <body>
-<div id="logo"><img src="img/modular.png" alt="A2 Comunicação" /></div>
+<h1 id="logo"><img src="img/modular.png" alt="A2 Comunicação" /></h1>
 <?php
 	date ("d/m/Y H:i:s");
 	$dir = new DirectoryIterator( 'modulos' );
@@ -20,6 +20,7 @@
 			
 			print "<div class='modulo'>";
 			print "<div class='visualizacao'>";
+			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
 			include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php");			
 			print "</div>";
 			print "<div class='codigo'>";
