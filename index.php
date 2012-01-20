@@ -34,13 +34,18 @@
 			print "<div class='info'>";
 			print "<div id='HTML'>";
 			print "<pre class='brush: html;'>";
-			print "</pre>";
+			print "</pre>";	
 			print "</div>";	
 			print "<div id='CSS'>";
 			print "<pre class='brush: css;'>";
 			echo $addCss[1];
 			print "</pre>";
+			print "</div>";
+			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
+			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
+			print "</div>";
 			print "</div>";			
+			
 		}
 	}	
 	foreach($dir as $file ){
