@@ -8,7 +8,8 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/syntax/syntax.php'); ?>
 </head>
 <body>
-<h1 id="logo"><img src="img/modular.png" alt="A2 Comunicação" /></h1>
+<h1 class="logo"><img src="img/modular.png" alt="A2 Comunicação" /></h1>
+<span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
 <?php
 	date ("d/m/Y H:i:s");
 	$dir = new DirectoryIterator( 'modulos' );
@@ -19,15 +20,17 @@
 			$dname = $file->getFilename();
 			
 			print "<div class='modulo'>";
-			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
 			print "<div class='visualizacao'>";
+			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
+			print "<div class='codigo'>";
 			include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php");			
 			print "</div>";
-			print "<div class='codigo'>";
+			print "</div>";
+			print "<div class='info'>";
 			print "<pre class='brush: html;'>";
 			print "</pre>";
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
-			print "<p class='date'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
+			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
 			print "</div>";
 			print "</div>";
 		}
@@ -38,13 +41,18 @@
 	}   
 ?>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jknavigable.js"></script>
 <script type="text/javascript">
-//código renderizado
 $(document).ready(function() {
+	//código renderizado
 	$('.visualizacao').each(function() {
-		var render = $(this).html();
+		var render = $(this).children('.codigo').html();
 		$(this).siblings('div').children('pre').css('text-transform','lowercase').text(render);
 	});
+	// navegação
+	$('.modulo').jknavigable();
+	//borda 1ºmodulo
+	$('.modulo').first().addClass('first');
 });
 </script>
 </body>
