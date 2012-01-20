@@ -19,8 +19,8 @@
 			$dname = $file->getFilename();
 			
 			print "<div class='modulo'>";
-			print "<div class='visualizacao'>";
 			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
+			print "<div class='visualizacao'>";
 			include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php");			
 			print "</div>";
 			print "<div class='codigo'>";
