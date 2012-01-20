@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8">
+<meta charset="iso-8859-1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>Modular HTML</title>	
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
 </head>
 <body>
-<div id="logo"><img src="modular.png" alt="A2 Comunicação" /></div>
+<div id="logo"><img src="img/modular.png" alt="A2 Comunicação" /></div>
 <?php
 	date ("d/m/Y H:i:s");
 	$dir = new DirectoryIterator( 'modulos' );

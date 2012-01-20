@@ -20,16 +20,16 @@ body {
 }
 #logo		{ width:100%; display:block; text-align:center; border-bottom:dotted 1px #ccc; padding:1% 0; }
 
-.modulo 					{ clear: both; overflow: hidden; border-bottom: dotted 1px #ccc; padding:1.5em 0; }
+.modulo 						{ clear: both; overflow: hidden; border-bottom: dotted 1px #ccc; padding:1.5em 0; }
 .modulo .visualizacao		{ width: 65%; float: left; }
-.modulo .codigo 			{ width: 30%; float: right; }
+.modulo .codigo 				{ width: 30%; float: right; }
 .modulo .codigo p			{ display:block; width:93%; padding: 0 1% 0 5%; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .codigo p a			{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
-.modulo .codigo p a:hover	{ background-color:#067f6c; color:#fff; }
-.modulo .codigo p.link		{ background:url(modulo.png) no-repeat scroll left center; }
-.modulo .codigo p.date		{ background:url(relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
+.modulo .codigo p a:hover		{ background-color:#067f6c; color:#fff; }
+.modulo .codigo p.link		{ background:url(img/modulo.png) no-repeat scroll left center; }
+.modulo .codigo p.date		{ background:url(img/relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
 .modulo .codigo p.date span	{ font-size:12px; font-weight:bold; color:#666; }
-.modulo .codigo textarea	{ width: 95%; font-size:90%; font-family: Cambria, Georgia, serif; }
+.modulo .codigo textarea		{ width: 95%; font-size:90%; font-family: Cambria, Georgia, serif; }
 
 /* @end index */
 
