@@ -24,7 +24,7 @@
 			$marcacao = "/*@".$dname."*/";
 			$addCss = explode($marcacao, $css);
 			
-			print "<div class='modulo'>";
+			print "<div class='modulo' id='$file'>";
 			print "<div class='visualizacao'>";
 			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
 			print "<div class='codigo'>";
