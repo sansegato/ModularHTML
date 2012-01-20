@@ -5,7 +5,7 @@
 <title>Modular HTML</title>	
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
-<?php include($_SERVER['DOCUMENT_ROOT'].'/syntax/syntax.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
 </head>
 <body>
 <h1 class="logo"><img src="img/modular.png" alt="A2 Comunicação" /></h1>
@@ -41,7 +41,7 @@
 	}   
 ?>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.jknavigable.js"></script>
+<script type="text/javascript" src="js/jquery.jknavigable.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	//código renderizado
