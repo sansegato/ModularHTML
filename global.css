@@ -58,13 +58,18 @@ Amarelo				#dfb417
 /* -------->>> Navegação <<<----------*/
 /* -----------------------------------*/
 
-/*@paginacao*/
+/*@2.3.paginacao*/
 #pagination			{ text-align:center; }
 #pagination a, 
 #pagination span	{ display:inline-block; background-color: #c1dfda; border: 1px solid #82bfb5; padding:6px 10px; text-decoration:none; color:#067f6c; margin:0px 5px; }
 #pagination a:hover,
 #pagination .active	{ background-color: #449f91; color:#fff; }
-/*@paginacao*/
+/*@2.3.paginacao*/
+
+/*@2.4.breadcrumbs*/
+#breadcrumbs ul li			{ float:left; padding: 0 10px 0 30px; background:url(http://placehold.it/16x16) no-repeat left center; }
+#breadcrumbs ul li.inicio 	{ padding: 0 10px 0 0; background:none; }
+/*@2.4.breadcrumbs*/
 
 
 
@@ -87,7 +92,7 @@ Amarelo				#dfb417
 /* ---------->>> Listas <<<-----------*/
 /* -----------------------------------*/
 
-/*@lista-de-arquivos*/
+/*@6.1.lista-de-arquivos*/
 ul.list-files{display:block; margin: 0 0 20px 0; padding:0;}
 ul.list-files li{display:block; padding:0; border-bottom:1px dotted #ccc;}
 ul.list-files li a{display:block; padding:8px 10px 8px 40px; font-size:12px;}
@@ -98,14 +103,14 @@ ul.list-files li a[href $='.ppt']{background:url(modulos/6.1.lista-de-arquivos/i
 ul.list-files li a[href $='.mp3']{background:url(modulos/6.1.lista-de-arquivos/img/mp3.png)  no-repeat scroll left center;}
 ul.list-files li:nth-child(even) a{background-color:#f9f9f9;}
 ul.list-files li a:hover{background-color:#f5f5f5;}
-/*@lista-de-arquivos*/
+/*@6.1.lista-de-arquivos*/
 
-/*@lista-de-categorias*/
+/*@6.2.lista-de-categorias*/
 ul.list-category{display:block; margin: 0 0 20px 0; padding:0;}
 ul.list-category li{display:block; padding:0; margin:0 1% 1% 0; float:left;}
 ul.list-category li a{display:block; padding:5px 10px; font-size:12px; color:#666; background:#f5f5f5; text-decoration:none; font-size:12px; border:1px dotted #ccc; float:left; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
 ul.list-category li a:hover{background:#ddd; border:1px solid #bbb; transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease;}
-/*@lista-de-categorias*/
+/*@6.2.lista-de-categorias*/
 
 
 /* -----------------------------------*/
