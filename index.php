@@ -23,7 +23,7 @@
 			
 			$marcacao = "/*@".$dname."*/";
 			$addCss = explode($marcacao, $css);
-			
+						
 			print "<div class='modulo'>";
 			print "<div class='visualizacao'>";
 			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
@@ -34,7 +34,7 @@
 			print "<div class='info'>";
 			print "<pre class='brush: html;'>";
 			print "</pre>";
-			echo $addCss[1];
+			echo $addCss[1];			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
 			print "</div>";
@@ -42,7 +42,7 @@
 			
 		}
 	}
-	fclose($css);
+	
 	foreach($dir as $file ){
 		if (!$file->isDot() && $file->isFile()){
 		}
