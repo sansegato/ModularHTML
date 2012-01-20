@@ -56,15 +56,14 @@ Amarelo				#dfb417
 /* -------->>> Navegação <<<----------*/
 /* -----------------------------------*/
 
-/**
-	@paginacao
-*/
+/*@paginacao*/
 #pagination			{ text-align:center; }
 #pagination a, 
 #pagination span	{ display:inline-block; background-color: #c1dfda; border: 1px solid #82bfb5; padding:6px 10px; text-decoration:none; color:#067f6c; margin:0px 5px; }
 #pagination a:hover,
 #pagination .active	{ background-color: #449f91; color:#fff; }
-/**/
+/*@paginacao*/
+
 
 
 /* -----------------------------------*/
