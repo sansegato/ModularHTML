@@ -1,41 +1,82 @@
 ModularHTML
 ===========
+Tendo como base o Pattern-Primer (https://github.com/adactio/Pattern-Primer), o ModularHTML √© um reposit√≥rio de c√≥digo para agilizar, aperfei√ßoar e padronizar a produ√ß√£o de p√°ginas web. 
 
-ModularHTML È um repositÛrio de cÛdigo para agilizar, aperfeiÁoar e padronizar a produÁ„o de p·ginas web.
-
-Para contribuir --> https://github.com/a2comunicacao/ModularHTML
+Conhe√ßa --> https://github.com/a2comunicacao/ModularHTML
 
 
 A Estrutura
 -----------
 
 **index.php**
-Lista todos os mÛdulos existentes seguindo algumas categorias:
+Lista todos os m√≥dulos existentes seguindo algumas categorias:
 
 * 1. Estrutura
-* 2. NavegaÁ„o
+* 2. Navega√ß√£o
 * 3. Texto
 * 4. Imagem
 * 5. Widget
 * 6. Listas
 * 7. Modal
-* 8. Formul·rio
+* 8. Formul√°rio
 
 **/modulos**
-Pasta contendo todos os mÛdulos existentes. Com o objetivo de manter a organizaÁ„o e o correto funcionamento da listagem dos mÛdulos, alguns padrıes precisam ser seguidos:
+Pasta contendo todos os m√≥dulos existentes. Com o objetivo de manter a organiza√ß√£o e o correto funcionamento da listagem dos m√≥dulos, alguns padr√µes precisam ser seguidos:
 
-* Nomenclatura da pasta: (n˙mero da categoria do mÛdulo).(n˙mero do mÛdulo).(tÌtulo-do-modulo-sem-espacos) --> 1.4.exemplo-de-modulo
-* Sempre usar letras min˙sculas e sem acentos;
-* Ao invÈs de espaÁos, usar hÌfens.
+* Nomenclatura da pasta: (n√∫mero da categoria do m√≥dulo).(n√∫mero do m√≥dulo).(t√≠tulo-do-modulo-sem-espacos) --> 1.4.exemplo-de-modulo
+* Sempre usar letras min√∫sculas e sem acentos;
+* Ao inv√©s de espa√ßos, usar h√≠fens.
 
 
 **global.css**
-Arquivo que contÈm as declaraÁıes de estilo de todos os mÛdulos. Do mesmo modo que a nomenclatura das pastas de mÛdulos, o CSS precisa seguir alguns padrıes.
+Arquivo que cont√©m as declara√ß√µes de estilo de todos os m√≥dulos. Do mesmo modo que a nomenclatura das pastas de m√≥dulos, o CSS precisa seguir alguns padr√µes.
 
-* O bloco de cÛdigo com as declaraÁıes de estilo referentes ao mÛdulo, deve ser envolvido por coment·rios contendo o mesmo nome atribuÌdo ‡ pasta do mÛdulo referente. Segue exemplo.
+* O bloco de c√≥digo com as declara√ß√µes de estilo referentes ao m√≥dulo, deve ser envolvido por coment√°rios contendo o mesmo nome atribu√≠do √† pasta do m√≥dulo referente. Segue exemplo.
 
 ``` css
 /*@1.4.exemplo-de-modulo*/
 .classe { border:solid 1px blue; }
 /*@1.4.exemplo-de-modulo*/
 ```
+
+Contribua
+---------
+
+Caso tenha id√©ia de algum m√≥dulo novo fique a vontade para contribuir.
+
+* Copie uma das pastas de m√≥dulos existentes e renomeie-a seguindo as regras de nomenclatura.
+* Dentro da pasta de cada M√≥dulo, existem dois arquivos: 'index.php' que √© onde voc√™ deve escrever o HTML do M√≥dulo, e 'demo.php' onde ficam as chamadas do CSS ('global.css'), da biblioteca jQuery e do JS (caso o M√≥dulo necessite). Note que o arquivo 'index.php' √© chamado atrav√©s de um 'include'.
+* Resumindo: o c√≥digo renderizado na p√°gina inicial do ModularHTML (tanto na visualiza√ß√£o do c√≥digo como do M√≥dulo em si) √© o que voc√™ escreve dentro do arquivo 'index.php'; j√° o arquivo 'demo.php' √© o que √© chamado na p√°gina de exemplo de cada M√≥dulo.
+* Abra o arquivo 'global.css' localizado na raiz do projeto e, dentro da categoria marcada no CSS coloque as declara√ß√µes de estilo do M√≥dulo seguindo os padr√µes acima.
+
+Erros
+-----
+Encontrou algum bug? Crie um 'issue' aqui: https://github.com/a2comunicacao/ModularHTML/issues
+
+
+Colaboradores
+-------------
+
+**Adriano Ribeiro**
+
++ http://twitter.com/adriano
+
+**Airton Vancin**
+
++ http://twitter.com/airtonvancin
+
+**Raphael Fabeni**
+
++ http://twitter.com/raphaelfabeni
+
+**Rodrigo Teixeira**
+
++ http://twitter.com/drigoteixeira
+
+**Sandra Segato**
+
++ http://twitter.com/sansegato
+
+**Vivian Oliveira**
+
++ http://twitter.com/viiholiveira
