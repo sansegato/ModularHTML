@@ -21,6 +21,8 @@ Lista todos os módulos existentes seguindo algumas categorias:
 * 7. Modal
 * 8. Formulário
 
+Veja a lista completa de módulos na Wiki: https://github.com/a2comunicacao/ModularHTML/wiki/Lista-de-m%C3%B3dulos
+
 **/modulos**
 
 Pasta contendo todos os módulos existentes. Com o objetivo de manter a organização e o correto funcionamento da listagem dos módulos, alguns padrões precisam ser seguidos:
