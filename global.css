@@ -87,6 +87,38 @@ Amarelo				#dfb417
 /* ---------->>> Widget <<<-----------*/
 /* -----------------------------------*/
 
+/*@5.6.link-para-as-redes-sociais*/
+#social-networks		{ height:55px; }
+#social-networks li 	{ margin-right: 15px; position: relative; float: left; height:36px; width:30px; list-style:none; }
+#social-networks a, 
+#social-networks a:visited,
+#social-networks a:hover {
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(modulos/5.6.link-para-as-redes-sociais/img/redes_sociais.png) no-repeat;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+#social-networks a:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70); -khtml-opacity: 0.7; -moz-opacity: 0.7; opacity: 0.7;
+}
+#social-networks li.facebook a	{ background-position: -3px -3px; }
+#social-networks li.twitter a	{ background-position: -49px -3px; }
+#social-networks li.orkut a		{ background-position: -95px -3px; }
+#social-networks li.youtube a	{ background-position: -140px -3px; }
+#social-networks li.flickr a		{ background-position: -186px -3px; }
+#social-networks li.linkedin a	{ background-position: -232px -3px; }
+#social-networks li.delicious a	{ background-position: -278px -3px; }
+#social-networks li.picasa a		{ background-position: -324px -3px; }
+#social-networks li.myspace a	{ background-position: -369px -3px; }
+#social-networks li.tumblr a		{ background-position: -417px -3px; }
+#social-networks li.rss a		{ background-position: -462px -3px; }	
+/*@5.6.link-para-as-redes-sociais*/
 
 /* -----------------------------------*/
 /* ---------->>> Listas <<<-----------*/
