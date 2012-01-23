@@ -37,6 +37,16 @@ h1.logo				{ width:100%; display:block; text-align:center; padding:0 0 1% 0; mar
 .modulo .info p.data span	{ font-size:12px; font-weight:bold; color:#666; }
 .modulo .info textarea		{ width: 95%; font-size:90%; font-family: Cambria, Georgia, serif; }
 
+.modulo .info .abas{display:block; margin:0; padding:0; width:100%; float:left;}
+.modulo .info .abas li{display:block; margin:0; padding:0; float:left; }
+.modulo .info .abas li a{display:block; margin:0; padding:5px 10px; color:#1B2426; background:#fff; float:left; font-size:11px; font-weight:bold; text-decoration:none; border:1px solid #1B2426; border-bottom:none; border-left:none;}
+.modulo .info .abas li a.active{color:#fff; background:#1B2426; border-color:#fff; }
+
+.modulo .info .html,
+.modulo .info .css{float:left; width:100%; display:none;}
+
+
+
 /* @end index */
 
 /* CORES */

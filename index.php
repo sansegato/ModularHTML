@@ -21,8 +21,7 @@
 		if (!$file->isDot() && $file->isDir()){
 			$dname = $file->getFilename();
 			
-			$marcacao = "/*@".$dname."*/";
-			$addCss = explode($marcacao, $css);
+			$marcacao = "/*@".$dname."*/";		
 
 			print "<div class='modulo' id='$file'>";
 			print "<div class='visualizacao'>";
@@ -32,15 +31,28 @@
 			print "</div>";
 			print "</div>";
 			print "<div class='info'>";
-			print "<div id='HTML'>";
+			print "<ul class='abas'>";
+			print "<li class='aba-html'><a href='#'>Html</a></li>";
+			
+			if(preg_match("/".$dname."/",$css)){
+				print "<li class='aba-css'><a href='#'>Css</a></li>";						
+			} else {}		
+			
+			print "</ul>";		
+			print "<div class='html'>";
 			print "<pre class='brush: html;'>";
 			print "</pre>";	
 			print "</div>";	
-			print "<div id='CSS'>";
-			print "<pre class='brush: css;'>";
-			echo $addCss[1];
-			print "</pre>";
-			print "</div>";
+								
+			if(preg_match("/".$dname."/",$css)){
+				$addCss = explode($marcacao, $css);
+				print "<div class='css'>";
+				print "<pre class='brush: css;'>";
+				echo $addCss[1];
+				print "</pre>";
+				print "</div>";
+			} else {}				
+			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
 			print "</div>";
@@ -57,15 +69,32 @@
 <script type="text/javascript" src="js/jquery.jknavigable.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	//código renderizado
+	//	código renderizado
 	$('.visualizacao').each(function() {
 		var render = $(this).children('.codigo').html();
-		$(this).siblings('div').children('#HTML').children('pre').css('text-transform','lowercase').text(render);
+		$(this).siblings('div').children('.html').children('pre').css('text-transform','lowercase').text(render);
 	});
-	// navegação
+	//	navegação
 	$('.modulo').jknavigable();
-	//borda 1ºmodulo
+	// 	borda 1ºmodulo
 	$('.modulo').first().addClass('first');
+	
+	
+	//	Abas	
+	$('.info div.html').show();		
+	$('.abas li:first-child a').addClass('active');	
+	$('.abas li a').click(function(){			
+		var anchor = $(this).parent('li').attr('class').slice(4,10);
+		if ( $(this).hasClass('active') ) {			
+		
+		} else {
+			$(this).addClass('active');
+			$(this).parent().siblings().children().removeClass('active');			
+			$(this).closest('ul').siblings('div.'+anchor).show();
+			$(this).closest('ul').siblings('div.'+anchor).siblings('div').hide();
+			return false;
+		}		
+	});	
 });
 </script>
 </body>
