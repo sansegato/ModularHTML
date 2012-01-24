@@ -17,8 +17,12 @@
 <div id="main">
 	<?php include ('index.php'); ?>
 </div>
+
+<!--//JS -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script src="js/jquery.sharrre-1.2.0.min.js"></script>
+
+<script src="<?php echo ($_SERVER['DOCUMENT_ROOT']."/js/jquery.sharrre-1.2.0.min.js"); ?>"></script>
+
 <script>
 $('#shareme').sharrre({
 	share: {
@@ -44,5 +48,7 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
+<!--//JS -->
+
 </body>
 </html>
