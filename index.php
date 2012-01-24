@@ -5,81 +5,33 @@
 <title>Modular HTML</title>	
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
-<?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
+
 </head>
 <body>
 
 <?php include ('header.php'); ?>
 
-<?php
-	$dir = new DirectoryIterator( 'modulos' );
-	date_default_timezone_set('America/Sao_Paulo');
-	
-	$css = file_get_contents('global.css');
-	
-	foreach($dir as $file ){
-		if (!$file->isDot() && $file->isDir()){
-			$dname = $file->getFilename();
-			
-			$marcacao = "/*@".$dname."*/";		
-
-			print "<div class='modulo' id='$file'>";
-			print "<div class='visualizacao'>";
-			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
-			print "<div class='codigo'>";
-			include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php");			
-			print "</div>";
-			print "</div>";
-			print "<div class='info'>";
-			print "<ul class='abas'>";
-			print "<li class='aba-html'><a href='#'>Html</a></li>";
-			
-			if(preg_match("/".$dname."/",$css)){
-				print "<li class='aba-css'><a href='#'>Css</a></li>";						
-			} else {}		
-			
-			print "</ul>";		
-			print "<div class='html'>";
-			print "<pre class='brush: html;'>";
-			print "</pre>";	
-			print "</div>";	
-								
-			if(preg_match("/".$dname."/",$css)){
-				$addCss = explode($marcacao, $css);
-				print "<div class='css'>";
-				print "<pre class='brush: css;'>";
-				echo $addCss[1];
-				print "</pre>";
-				print "</div>";
-			} else {}				
-			
-			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
-			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
-			print "</div>";
-			print "</div>";			
-			
-		}
-	}	
-	foreach($dir as $file ){
-		if (!$file->isDot() && $file->isFile()){
-		}
-	}   
-?>
+<div id="intro">
+	<p>ModularHTML &eacute; um reposit&oacute;rio de c&oacute;digo para agilizar, aperfei&ccedil;oar e padronizar a produ&ccedil;&atilde;o de p&aacute;ginas web</p>
+	<ul>
+		<li><a href="demo.php">Demonstra&ccedil;&atilde;o</a></li>
+		<li><a href="https://github.com/a2comunicacao/ModularHTML">Download</a></li>
+	</ul>
+</div>
 
 <?php include ('footer.php'); ?>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.jknavigable.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	//	cÛdigo renderizado
+	//	código renderizado
 	$('.visualizacao').each(function() {
 		var render = $(this).children('.codigo').html();
 		$(this).siblings('div').children('.html').children('pre').css('text-transform','lowercase').text(render);
 	});
-	//	navegaÁ„o
+	//	navegação
 	$('.modulo').jknavigable();
-	// 	borda 1∫modulo
+	// 	borda 1ºmodulo
 	$('.modulo').first().addClass('first');
 	
 	
