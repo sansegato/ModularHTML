@@ -8,8 +8,9 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
 </head>
 <body>
-<h1 class="logo"><img src="img/modular.png" alt="A2 Comunicação" /></h1>
-<span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
+
+<?php include ('header.php'); ?>
+
 <?php
 	$dir = new DirectoryIterator( 'modulos' );
 	date_default_timezone_set('America/Sao_Paulo');
@@ -64,6 +65,9 @@
 		}
 	}   
 ?>
+
+<?php include ('footer.php'); ?>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.jknavigable.js"></script>
 <script type="text/javascript">
