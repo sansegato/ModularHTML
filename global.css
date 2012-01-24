@@ -208,6 +208,22 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* ---------->>> Imagem <<<-----------*/
 /* -----------------------------------*/
+/*@4.4.thumbnails*/
+#thumbs	{
+	overflow:hidden;
+}
+.thumb	{
+	float:left;
+	margin:0 5px;
+}
+.thumb a:hover	{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-khtml-opacity: 0.7;
+	-moz-opacity: 0.7;
+	opacity: 0.7;	
+}
+/*@4.4.thumbnails*/
 
 
 /* -----------------------------------*/
@@ -375,6 +391,52 @@ ul.list-category li a:hover {
 }
 /*@6.2.lista-de-categorias*/
 
+/*@6.3.lista-de-artigos*/
+ul.list-news	{
+	overflow:hidden;
+}
+ul.list-news li	{
+	list-style-type:none;
+}
+ul.list-news .thumb {
+	margin:0 10px 0 0;
+}
+ul.list-news h3	{
+	margin:0 0 10px 5px;
+	padding:0;
+	line-height:1em;
+}
+ul.list-news .date	{
+	margin:0 0 5px; 
+	padding:0;
+	font-size:0.7em;
+}
+ul.midia	{
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+ul.midia li {
+	background-image:url(modulos/6.3.lista-de-artigos/img/lista-artigos.png);
+	background-repeat:no-repeat;
+	float:left;
+	display:block;
+	width:25px;
+	height:25px;
+	margin:0 2px 0 0;
+	background-position:5px 0;
+}
+ul.midia li.audio	{
+	background-position:-29px 0;
+}
+ul.midia li.image	{
+	background-position:-66px 0;
+}
+ul.midia li.video	{
+	background-position:-111px 0;
+}
+/*@6.3.lista-de-artigos*/
+
 
 /* -----------------------------------*/
 /* ---------->>> Modal <<<------------*/
@@ -472,6 +534,7 @@ label span {
 	padding:5px 2%;
 }
 .contact-form input[type=text], 
+.contact-form input[type=password], 
 .contact-form textarea {
 	width:99.9%;
 }
@@ -485,5 +548,82 @@ label span {
 	float:left;
 	width:80%;
 }
-
 /*@8.13.fale-conosco*/
+
+/*@8.14.login*/
+/* Propriedades de CSS herdadas dos Módulos 8.13 e 8.1 */
+/*@8.14.login*/
+
+/*@8.16.mensagem-de-sucesso*/
+.feedback	{
+	display:block;
+	width:96%;
+	padding:5px 2%;
+	margin:0 0 1em 0;
+}
+.feedback p	{ 
+	margin:0;
+	padding:0 0 0 30px;
+	font-size:0.8em;
+}
+.feedback.success {
+	background-color:#E6EFC2; 
+	border: 1px solid #C6D880; 
+	color: #264409; 
+}
+.feedback.success p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/success.png) no-repeat left center;
+}
+/*@8.16.mensagem-de-sucesso*/
+
+/*@8.17.mensagem-de-erro*/
+/* Propriedades da classe 'feedback' herdadas do Módulo anterior */
+.feedback.error {
+	background-color:#FBE3E4; 
+	border: 1px solid #FBC2C4; 
+	color: #8A1F11; 
+}
+.feedback.error p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/error.png) no-repeat left center;
+}
+/*@8.17.mensagem-de-erro*/
+
+/*@8.18.mensagem-de-alerta*/
+/* Propriedades da classe 'feedback' herdadas do Módulo 8.16 */
+.feedback.alert {
+	background-color:#FFF6BF;
+	border: 1px solid #FFD324;
+	color: #514721;
+}
+.feedback.alert p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/alert.png) no-repeat left center;
+}
+/*@8.18.mensagem-de-alerta*/
+
+/*@8.19.mensagem-de-informacao*/
+/* Propriedades da classe 'feedback' herdadas do Módulo 8.16 */
+.feedback.information {
+	background-color:#d8f7ff;
+	border: 1px solid #c0cadd;
+	color: #416997;
+}
+.feedback.information p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/info.png) no-repeat left center;
+}
+/*@8.19.mensagem-de-informacao*/
+
+/*@8.20.botao*/
+button[type=submit] { 
+	background-color:#c1dfda;
+	color:#449f91;
+	border:none;
+	padding:5px 10px;
+}
+button[type=submit]:hover	{
+	background-color:#82bfb5;
+	color:#fff;
+}
+/*@8.20.botao*/
+
+
+
