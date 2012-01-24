@@ -18,7 +18,7 @@ body {
 	border-color: rgba(0, 0, 0, 0.13);
 }
 
-h1.logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; margin:0; }
+h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; margin:0; }
 .nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.5em; }
 .nome-modulo a		{ text-decoration:none; color:#449f91; }
 .nome-modulo a:hover{ color:#fff; background-color:#449f91; padding-left:1em; padding-right:1em; }
@@ -26,15 +26,15 @@ h1.logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 .dica						{ display:block; text-align:center; color:#666; font-size:0.85em; margin-bottom:3em; }
 #intro 			{ margin: 5% 0; text-align: center; font-size: 1.4em; padding: 0 25%; line-height: 1.6; }
 #intro ul  		{ margin: 0; padding: 0 }
-#intro ul li 	{ display: inline; list-style: none; padding: 1%; }
-#intro ul li:first-child 	{ border-right: 5px solid #449f91; }
+#intro ul li 	{ display: inline; list-style: none; padding: 1.5%; }
+#intro ul li:first-child 	{ border-right: 3px solid #449f91; }
 .modulo 					{ clear: both; overflow: hidden; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.first				{ border-top: dotted 2px #ddd; }
 .modulo .visualizacao		{ width: 65%; float: left; }
 .modulo .info 				{ width: 30%; float: right; }
 .modulo .info p				{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
-.nome-modulo a				{ /*Transi√ß√£o*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
+.nome-modulo a				{ /*TransiÁ„o*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
 .modulo .info p a:hover		{ background-color:#067f6c; color:#fff; }
 .modulo .info p.link		{ background:url(img/modulo.png) no-repeat scroll left center; }
 .modulo .info p.data		{ background:url(img/relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
@@ -58,7 +58,7 @@ footer { text-align: center; }
 /*
 Verde bem claro		#c1dfda
 Verde claro			#82bfb5
-Verde m√©dio			#449f91
+Verde mÈdio			#449f91
 Verde escuro		#067f6c
 Verde bem escuro	#033f36
 Amarelo				#dfb417
@@ -70,7 +70,7 @@ Amarelo				#dfb417
 
 
 /* -----------------------------------*/
-/* -------->>> Navega√ß√£o <<<----------*/
+/* -------->>> NavegaÁ„o <<<----------*/
 /* -----------------------------------*/
 /*@2.1.menu-horizontal-com-subitens*/
 #nav-primary {
@@ -91,7 +91,9 @@ Amarelo				#dfb417
 	color:#067f6c;
 	min-width:80px;
 }
-.horizontal li a:hover, .horizontal li.active a, .horizontal li a.sub:hover {
+.horizontal li a:hover, 
+.horizontal li.active a, 
+.horizontal li a.sub:hover {
 	color:#fff;
 	background-color:#449f91;
 }
@@ -133,7 +135,9 @@ Amarelo				#dfb417
 	background-color:#82bfb5;
 	color:#067f6c;
 }
-.vertical li a:hover, .vertical li.active a, .vertical li a.sub:hover {
+.vertical li a:hover, 
+.vertical li.active a, 
+.vertical li a.sub:hover {
 	color:#fff;
 	background-color:#449f91;
 }
@@ -165,7 +169,8 @@ Amarelo				#dfb417
 #pagination {
 	text-align:center;
 }
-#pagination a, #pagination span {
+#pagination a, 
+#pagination span {
 	display:inline-block;
 	background-color: #c1dfda;
 	border: 1px solid #82bfb5;
@@ -174,7 +179,8 @@ Amarelo				#dfb417
 	color:#067f6c;
 	margin:0px 5px;
 }
-#pagination a:hover, #pagination .active {
+#pagination a:hover, 
+#pagination .active {
 	background-color: #449f91;
 	color:#fff;
 }
@@ -202,6 +208,22 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* ---------->>> Imagem <<<-----------*/
 /* -----------------------------------*/
+/*@4.4.thumbnails*/
+#thumbs	{
+	overflow:hidden;
+}
+.thumb	{
+	float:left;
+	margin:0 5px;
+}
+.thumb a:hover	{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-khtml-opacity: 0.7;
+	-moz-opacity: 0.7;
+	opacity: 0.7;	
+}
+/*@4.4.thumbnails*/
 
 
 /* -----------------------------------*/
@@ -209,8 +231,14 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 
 /*@5.2.compartilhar*/
-.social-networks-share{float:left; margin:68px 25% 0 25%;}
-.social-networks-share .sharrre .button{float:left; width:60px;}
+.social-networks-share	{
+	float:left; 
+	margin:68px 25% 0 25%;
+}
+.social-networks-share .sharrre .button	{
+	float:left;
+	width:60px;
+}
 /*@5.2.compartilhar*/
 
 /*@5.6.link-para-as-redes-sociais*/
@@ -225,7 +253,9 @@ Amarelo				#dfb417
 	width:30px;
 	list-style:none;
 }
-#social-networks a, #social-networks a:visited, #social-networks a:hover {
+#social-networks a, 
+#social-networks a:visited, 
+#social-networks a:hover {
 	margin: 0 auto;
 	width: 30px;
 	height: 30px;
@@ -361,6 +391,52 @@ ul.list-category li a:hover {
 }
 /*@6.2.lista-de-categorias*/
 
+/*@6.3.lista-de-artigos*/
+ul.list-news	{
+	overflow:hidden;
+}
+ul.list-news li	{
+	list-style-type:none;
+}
+ul.list-news .thumb {
+	margin:0 10px 0 0;
+}
+ul.list-news h3	{
+	margin:0 0 10px 5px;
+	padding:0;
+	line-height:1em;
+}
+ul.list-news .date	{
+	margin:0 0 5px; 
+	padding:0;
+	font-size:0.7em;
+}
+ul.midia	{
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+ul.midia li {
+	background-image:url(modulos/6.3.lista-de-artigos/img/lista-artigos.png);
+	background-repeat:no-repeat;
+	float:left;
+	display:block;
+	width:25px;
+	height:25px;
+	margin:0 2px 0 0;
+	background-position:5px 0;
+}
+ul.midia li.audio	{
+	background-position:-29px 0;
+}
+ul.midia li.image	{
+	background-position:-66px 0;
+}
+ul.midia li.video	{
+	background-position:-111px 0;
+}
+/*@6.3.lista-de-artigos*/
+
 
 /* -----------------------------------*/
 /* ---------->>> Modal <<<------------*/
@@ -368,7 +444,7 @@ ul.list-category li a:hover {
 
 
 /* -----------------------------------*/
-/* ------->>> Formul√°rio <<<----------*/
+/* ------->>> Formul·rio <<<----------*/
 /* -----------------------------------*/
 /*@8.1.label*/
 label {
@@ -450,13 +526,104 @@ label span {
 /*@8.8.radio*/
 
 /*@8.13.fale-conosco*/
+/* Algumas propriedades dos inputs s„o herdadas dos mÛdulos acima */
 .contact-form {
 	width:96%;
 	background-color: #F5F5F5;
 	border: 1px solid #CCCCCC;
 	padding:5px 2%;
 }
-.contact-form input[type=text], .contact-form textarea {
-	width:99%;
+.contact-form input[type=text], 
+.contact-form input[type=password], 
+.contact-form textarea {
+	width:99.9%;
+}
+.ddd	{ 
+	float:left;
+	width:15%;
+	margin-right:5%;
+}
+
+.phone	{  
+	float:left;
+	width:80%;
 }
 /*@8.13.fale-conosco*/
+
+/*@8.14.login*/
+/* Propriedades de CSS herdadas dos MÛdulos 8.13 e 8.1 */
+/*@8.14.login*/
+
+/*@8.16.mensagem-de-sucesso*/
+.feedback	{
+	display:block;
+	width:96%;
+	padding:5px 2%;
+	margin:0 0 1em 0;
+}
+.feedback p	{ 
+	margin:0;
+	padding:0 0 0 30px;
+	font-size:0.8em;
+}
+.feedback.success {
+	background-color:#E6EFC2; 
+	border: 1px solid #C6D880; 
+	color: #264409; 
+}
+.feedback.success p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/success.png) no-repeat left center;
+}
+/*@8.16.mensagem-de-sucesso*/
+
+/*@8.17.mensagem-de-erro*/
+/* Propriedades da classe 'feedback' herdadas do MÛdulo anterior */
+.feedback.error {
+	background-color:#FBE3E4; 
+	border: 1px solid #FBC2C4; 
+	color: #8A1F11; 
+}
+.feedback.error p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/error.png) no-repeat left center;
+}
+/*@8.17.mensagem-de-erro*/
+
+/*@8.18.mensagem-de-alerta*/
+/* Propriedades da classe 'feedback' herdadas do MÛdulo 8.16 */
+.feedback.alert {
+	background-color:#FFF6BF;
+	border: 1px solid #FFD324;
+	color: #514721;
+}
+.feedback.alert p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/alert.png) no-repeat left center;
+}
+/*@8.18.mensagem-de-alerta*/
+
+/*@8.19.mensagem-de-informacao*/
+/* Propriedades da classe 'feedback' herdadas do MÛdulo 8.16 */
+.feedback.information {
+	background-color:#d8f7ff;
+	border: 1px solid #c0cadd;
+	color: #416997;
+}
+.feedback.information p { 
+	background:url(modulos/8.16.mensagem-de-sucesso/img/info.png) no-repeat left center;
+}
+/*@8.19.mensagem-de-informacao*/
+
+/*@8.20.botao*/
+button[type=submit] { 
+	background-color:#c1dfda;
+	color:#449f91;
+	border:none;
+	padding:5px 10px;
+}
+button[type=submit]:hover	{
+	background-color:#82bfb5;
+	color:#fff;
+}
+/*@8.20.botao*/
+
+
+
