@@ -2,7 +2,7 @@
 <head>
 <meta charset="iso-8859-1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>Modular HTML</title>	
+<title>ModularHTML</title>	
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
 
