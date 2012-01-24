@@ -29,7 +29,7 @@
 			print "<div class='visualizacao'>";
 			print "<h2 class='nome-modulo'><a href='modulos/$file/demo.php'>$file</a></h2>";
 			print "<div class='codigo'>";
-			include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php");			
+			include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");			
 			print "</div>";
 			print "</div>";
 			print "<div class='info'>";
