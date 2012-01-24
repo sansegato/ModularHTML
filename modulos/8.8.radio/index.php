@@ -1,0 +1,1 @@
+<input type="radio" name="item1" id="item1" class="input-radio" />Item 1
