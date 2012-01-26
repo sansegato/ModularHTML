@@ -1,7 +1,27 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
-<!--@2.8.nuvem-de-tags -->
+<!--@2.05.abas -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#tab1').css('display', 'block');
+
+	$('a', $('#tab-nav')).click(function() {
+		var i = $('a', $('#tab-nav')).index(this) + 1;
+		$(this).parents('#tabs')
+			.children('.tab:visible').hide();
+	  
+	  $('#tab' + i).show();
+	  $(this).parents('#tab-nav').find('a').removeClass('current');
+	  $(this).addClass('current');
+	})
+})
+</script>
+<!--@2.05.abas -->
+
+
+<!--@2.08.nuvem-de-tags -->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -20,9 +40,21 @@ $(document).ready(function() {
 	}
 });
 </script>
-<!--@2.8.nuvem-de-tags -->
+<!--@2.08.nuvem-de-tags -->
+
+
+<!--@4.03.slideshow -->
+<script type="text/javascript" src="/js/modulos/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('.slideshow').flexslider();
+});
+</script>
+<!--@4.03.slideshow -->
 	
-<!--@5.2.compartilhar -->
+
+	
+<!--@5.02.compartilhar -->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -49,4 +81,4 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.2.compartilhar -->
+<!--@5.02.compartilhar -->

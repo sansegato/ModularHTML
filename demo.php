@@ -57,7 +57,7 @@
 			} else {}				
 			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
-			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."/modulos/$file/index.php"))."</p>";
+			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
 			print "</div>";
 			print "</div>";			
 			
