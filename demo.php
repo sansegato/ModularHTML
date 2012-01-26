@@ -2,7 +2,7 @@
 <head>
 <meta charset="iso-8859-1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>Modular HTML</title>	
+<title>ModularHTML</title>	
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
@@ -41,8 +41,9 @@
 			} else {}		
 			
 			print "</ul>";		
-			print "<div class='html'>";
+			print "<div class='html'>";			
 			print "<pre class='brush: html;'>";
+			include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
 			print "</pre>";	
 			print "</div>";	
 								
@@ -69,21 +70,20 @@
 ?>
 
 <?php include ('footer.php'); ?>
+<?php include ('global.js.php'); ?>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.jknavigable.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	//	código renderizado
-	$('.visualizacao').each(function() {
-		var render = $(this).children('.codigo').html();
-		$(this).siblings('div').children('.html').children('pre').css('text-transform','lowercase').text(render);
-	});
+	//$('.visualizacao').each(function() {
+		//var render = $(this).children('.codigo').html();
+		//$(this).siblings('div').children('.html').children('pre').css('text-transform','lowercase').text(render);
+	//});
 	//	navegação
 	$('.modulo').jknavigable();
 	// 	borda 1ºmodulo
-	$('.modulo').first().addClass('first');
-	
+	$('.modulo').first().addClass('first');	
 	
 	//	Abas	
 	$('.info div.html').show();		
@@ -102,5 +102,6 @@ $(document).ready(function() {
 	});	
 });
 </script>
+
 </body>
 </html>

@@ -18,7 +18,7 @@ body {
 	border-color: rgba(0, 0, 0, 0.13);
 }
 
-h1.logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; margin:0; }
+h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; margin:0; }
 .nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.5em; }
 .nome-modulo a		{ text-decoration:none; color:#449f91; }
 .nome-modulo a:hover{ color:#fff; background-color:#449f91; padding-left:1em; padding-right:1em; }
@@ -26,8 +26,8 @@ h1.logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 .dica						{ display:block; text-align:center; color:#666; font-size:0.85em; margin-bottom:3em; }
 #intro 			{ margin: 5% 0; text-align: center; font-size: 1.4em; padding: 0 25%; line-height: 1.6; }
 #intro ul  		{ margin: 0; padding: 0 }
-#intro ul li 	{ display: inline; list-style: none; padding: 1%; }
-#intro ul li:first-child 	{ border-right: 5px solid #449f91; }
+#intro ul li 	{ display: inline; list-style: none; padding: 1.5%; }
+#intro ul li:first-child 	{ border-right: 3px solid #449f91; }
 .modulo 					{ clear: both; overflow: hidden; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.first				{ border-top: dotted 2px #ddd; }
 .modulo .visualizacao		{ width: 65%; float: left; }
