@@ -100,6 +100,17 @@ $(document).ready(function() {
 			return false;
 		}		
 	});	
+	
+	//	Scroll abas
+ 	$('.info .html, .info .css').each(function() {
+		if($(this).height() > 300){
+			$(this).css('height','300px');
+			$(this).css('overflow-x','hidden');
+		}		
+	});	
+	
+	
+	
 });
 </script>
 
