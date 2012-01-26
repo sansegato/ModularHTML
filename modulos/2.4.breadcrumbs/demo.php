@@ -13,9 +13,8 @@
 	<script src="../../js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
-<div id="main">
-	<?php include ('index.php'); ?>
-</div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<div id="main">
+		<?php include ('index.php'); ?>
+	</div>
 </body>
 </html>
