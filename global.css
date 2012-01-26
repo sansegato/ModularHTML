@@ -72,7 +72,7 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* -------->>> Navegação <<<----------*/
 /* -----------------------------------*/
-/*@2.1.menu-horizontal-com-subitens*/
+/*@2.01.menu-horizontal-com-subitens*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -98,7 +98,7 @@ Amarelo				#dfb417
 	background-color:#449f91;
 }
 .horizontal li a.sub {
-	background:#82bfb5 url(modulos/2.1.menu-horizontal-com-subitens/img/seta.png) no-repeat scroll 95% 17px;
+	background:#82bfb5 url(modulos/2.01.menu-horizontal-com-subitens/img/seta.png) no-repeat scroll 95% 17px;
 }
 .horizontal li a.sub:hover {
 	background-position:95% -9px;
@@ -116,9 +116,9 @@ Amarelo				#dfb417
 	float:none;
 	list-style-type:none;
 }
-/*@2.1.menu-horizontal-com-subitens*/
+/*@2.01.menu-horizontal-com-subitens*/
 
-/*@2.2.menu-vertical-com-subitens*/
+/*@2.02.menu-vertical-com-subitens*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -163,9 +163,9 @@ Amarelo				#dfb417
 .vertical li.active #nav-secondary {
 	display:block;
 }
-/*@2.2.menu-vertical-com-subitens*/
+/*@2.02.menu-vertical-com-subitens*/
 
-/*@2.3.paginacao*/
+/*@2.03.paginacao*/
 #pagination {
 	text-align:center;
 }
@@ -184,9 +184,9 @@ Amarelo				#dfb417
 	background-color: #449f91;
 	color:#fff;
 }
-/*@2.3.paginacao*/
+/*@2.03.paginacao*/
 
-/*@2.4.breadcrumbs*/
+/*@2.04.breadcrumbs*/
 #breadcrumbs ul li {
 	float:left;
 	padding: 0 10px 0 30px;
@@ -196,7 +196,7 @@ Amarelo				#dfb417
 	padding: 0 10px 0 0;
 	background:none;
 }
-/*@2.4.breadcrumbs*/
+/*@2.04.breadcrumbs*/
 
 
 
@@ -208,10 +208,7 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* ---------->>> Imagem <<<-----------*/
 /* -----------------------------------*/
-/*@4.4.thumbnails*/
-#thumbs	{
-	overflow:hidden;
-}
+/*@4.04.thumbnails*/
 .thumb	{
 	float:left;
 	margin:0 5px;
@@ -223,14 +220,14 @@ Amarelo				#dfb417
 	-moz-opacity: 0.7;
 	opacity: 0.7;	
 }
-/*@4.4.thumbnails*/
+/*@4.04.thumbnails*/
 
 
 /* -----------------------------------*/
 /* ---------->>> Widget <<<-----------*/
 /* -----------------------------------*/
 
-/*@5.2.compartilhar*/
+/*@5.02.compartilhar*/
 .social-networks-share	{
 	float:left; 
 	margin:68px 25% 0 25%;
@@ -239,9 +236,9 @@ Amarelo				#dfb417
 	float:left;
 	width:60px;
 }
-/*@5.2.compartilhar*/
+/*@5.02.compartilhar*/
 
-/*@5.6.link-para-as-redes-sociais*/
+/*@5.06.link-para-as-redes-sociais*/
 #social-networks {
 	height:55px;
 }
@@ -261,7 +258,7 @@ Amarelo				#dfb417
 	height: 30px;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: url(modulos/5.6.link-para-as-redes-sociais/img/redes_sociais.png) no-repeat;
+	background: url(modulos/5.06.link-para-as-redes-sociais/img/redes_sociais.png) no-repeat;
 	display: block;
 	position: relative;
 	z-index: 2;
@@ -301,18 +298,18 @@ Amarelo				#dfb417
 	background-position: -369px -3px;
 }
 #social-networks li.tumblr a {
-	background-position: -417px -3px;
+	background-position: -415px -3px;
 }
 #social-networks li.rss a {
 	background-position: -462px -3px;
 }
-/*@5.6.link-para-as-redes-sociais*/
+/*@5.06.link-para-as-redes-sociais*/
 
 /* -----------------------------------*/
 /* ---------->>> Listas <<<-----------*/
 /* -----------------------------------*/
 
-/*@6.1.lista-de-arquivos*/
+/*@6.01.lista-de-arquivos*/
 ul.list-files {
 	display:block;
 	margin: 0 0 20px 0;
@@ -329,19 +326,19 @@ ul.list-files li a {
 	font-size:12px;
 }
 ul.list-files li a[href $='.pdf'] {
-	background:url(modulos/6.1.lista-de-arquivos/img/pdf.png) no-repeat scroll left center;
+	background:url(modulos/6.01.lista-de-arquivos/img/pdf.png) no-repeat scroll left center;
 }
 ul.list-files li a[href $='.doc'] {
-	background:url(modulos/6.1.lista-de-arquivos/img/doc.png) no-repeat scroll left center;
+	background:url(modulos/6.01.lista-de-arquivos/img/doc.png) no-repeat scroll left center;
 }
 ul.list-files li a[href $='.xls'] {
-	background:url(modulos/6.1.lista-de-arquivos/img/xls.png) no-repeat scroll left center;
+	background:url(modulos/6.01.lista-de-arquivos/img/xls.png) no-repeat scroll left center;
 }
 ul.list-files li a[href $='.ppt'] {
-	background:url(modulos/6.1.lista-de-arquivos/img/ppt.png) no-repeat scroll left center;
+	background:url(modulos/6.01.lista-de-arquivos/img/ppt.png) no-repeat scroll left center;
 }
 ul.list-files li a[href $='.mp3'] {
-	background:url(modulos/6.1.lista-de-arquivos/img/mp3.png) no-repeat scroll left center;
+	background:url(modulos/6.01.lista-de-arquivos/img/mp3.png) no-repeat scroll left center;
 }
 ul.list-files li:nth-child(even) a {
 background-color:#f9f9f9;
@@ -349,9 +346,9 @@ background-color:#f9f9f9;
 ul.list-files li a:hover {
 	background-color:#f5f5f5;
 }
-/*@6.1.lista-de-arquivos*/
+/*@6.01.lista-de-arquivos*/
 
-/*@6.2.lista-de-categorias*/
+/*@6.02.lista-de-categorias*/
 ul.list-category {
 	display:block;
 	margin: 0 0 20px 0;
@@ -389,9 +386,9 @@ ul.list-category li a:hover {
 	-moz-transition:all 0.5s ease;
 	-webkit-transition:all 0.5s ease;
 }
-/*@6.2.lista-de-categorias*/
+/*@6.02.lista-de-categorias*/
 
-/*@6.3.lista-de-artigos*/
+/*@6.03.lista-de-artigos*/
 ul.list-news	{
 	overflow:hidden;
 }
@@ -404,36 +401,25 @@ ul.list-news .thumb {
 ul.list-news h3	{
 	margin:0 0 10px 5px;
 	padding:0;
-	line-height:1em;
+	line-height:1;
 }
 ul.list-news .date	{
 	margin:0 0 5px; 
 	padding:0;
 	font-size:0.7em;
 }
-ul.midia	{
-	overflow:hidden;
+ul.list-news .subtitle	{
 	margin:0;
-	padding:0;
+	font-size:0.8em;
+	line-height:1;
 }
-ul.midia li {
-	background-image:url(modulos/6.3.lista-de-artigos/img/lista-artigos.png);
-	background-repeat:no-repeat;
-	float:left;
-	display:block;
-	width:25px;
-	height:25px;
-	margin:0 2px 0 0;
-	background-position:5px 0;
+.content-type	{
+	overflow:hidden;
+	line-height:1;
+	margin-bottom:0.5em;
 }
-ul.midia li.audio	{
-	background-position:-29px 0;
-}
-ul.midia li.image	{
-	background-position:-66px 0;
-}
-ul.midia li.video	{
-	background-position:-111px 0;
+.content-type figure	{
+	float:left; margin-right:0.5em;
 }
 /*@6.3.lista-de-artigos*/
 
@@ -446,7 +432,7 @@ ul.midia li.video	{
 /* -----------------------------------*/
 /* ------->>> Formulário <<<----------*/
 /* -----------------------------------*/
-/*@8.1.label*/
+/*@8.01.label*/
 label {
 	display:block;
 	margin:5px 0px 10px 0px;
@@ -463,13 +449,13 @@ label span {
 .input-text:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.1.label*/
+/*@8.01.label*/
 
-/*@8.2.input-text*/
+/*@8.02.input-text*/
 /*propriedade herdada do item anterior*/
-/*@8.2.input-text*/
+/*@8.02.input-text*/
 
-/*@8.3.input-text*/
+/*@8.03.input-text*/
 .input-submit {
 	background-color:#c1dfda;
 	color:#449f91;
@@ -480,9 +466,9 @@ label span {
 	background-color:#82bfb5;
 	color:#fff;
 }
-/*@8.3.input-text*/
+/*@8.03.input-text*/
 
-/*@8.4.textarea*/
+/*@8.04.textarea*/
 .input-textarea {
 	border:solid 1px #c1dfda;
 	color:#999999;
@@ -490,15 +476,15 @@ label span {
 .input-textarea:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.4.textarea*/
+/*@8.04.textarea*/
 
-/*@8.5.upload*/
+/*@8.05.upload*/
 .input-file {
 	color:#999;
 }
-/*@8.5.upload*/
+/*@8.05.upload*/
 
-/*@8.6.select*/
+/*@8.06.select*/
 .select-form {
 	border:solid 1px #c1dfda;
 	color:#999999;
@@ -506,24 +492,24 @@ label span {
 .select-form:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.6.select*/
+/*@8.06.select*/
 
-/*@8.7.checkbox*/
+/*@8.07.checkbox*/
 .input-checkbox {
 	margin-right: 10px;
 	padding: 0;
 	vertical-align: baseline;
 	color:#999999;
 }
-/*@8.7.checkbox*/
+/*@8.07.checkbox*/
 
-/*@8.8.radio*/
+/*@8.08.radio*/
 .input-radio {
 	margin-right: 10px;
 	padding: 0;
 	vertical-align: baseline;
 }
-/*@8.8.radio*/
+/*@8.08.radio*/
 
 /*@8.13.fale-conosco*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
@@ -584,7 +570,7 @@ label span {
 	color: #8A1F11; 
 }
 .feedback.error p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/error.png) no-repeat left center;
+	background:url(modulos/8.17.mensagem-de-erro/img/error.png) no-repeat left center;
 }
 /*@8.17.mensagem-de-erro*/
 
@@ -596,7 +582,7 @@ label span {
 	color: #514721;
 }
 .feedback.alert p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/alert.png) no-repeat left center;
+	background:url(modulos/8.18.mensagem-de-alerta/img/alert.png) no-repeat left center;
 }
 /*@8.18.mensagem-de-alerta*/
 
@@ -608,7 +594,7 @@ label span {
 	color: #416997;
 }
 .feedback.information p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/info.png) no-repeat left center;
+	background:url(modulos/8.19.mensagem-de-informacao/img/info.png) no-repeat left center;
 }
 /*@8.19.mensagem-de-informacao*/
 
