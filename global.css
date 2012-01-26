@@ -209,9 +209,6 @@ Amarelo				#dfb417
 /* ---------->>> Imagem <<<-----------*/
 /* -----------------------------------*/
 /*@4.4.thumbnails*/
-#thumbs	{
-	overflow:hidden;
-}
 .thumb	{
 	float:left;
 	margin:0 5px;
@@ -301,7 +298,7 @@ Amarelo				#dfb417
 	background-position: -369px -3px;
 }
 #social-networks li.tumblr a {
-	background-position: -417px -3px;
+	background-position: -415px -3px;
 }
 #social-networks li.rss a {
 	background-position: -462px -3px;
@@ -404,36 +401,25 @@ ul.list-news .thumb {
 ul.list-news h3	{
 	margin:0 0 10px 5px;
 	padding:0;
-	line-height:1em;
+	line-height:1;
 }
 ul.list-news .date	{
 	margin:0 0 5px; 
 	padding:0;
 	font-size:0.7em;
 }
-ul.midia	{
-	overflow:hidden;
+ul.list-news .subtitle	{
 	margin:0;
-	padding:0;
+	font-size:0.8em;
+	line-height:1;
 }
-ul.midia li {
-	background-image:url(modulos/6.3.lista-de-artigos/img/lista-artigos.png);
-	background-repeat:no-repeat;
-	float:left;
-	display:block;
-	width:25px;
-	height:25px;
-	margin:0 2px 0 0;
-	background-position:5px 0;
+.content-type	{
+	overflow:hidden;
+	line-height:1;
+	margin-bottom:0.5em;
 }
-ul.midia li.audio	{
-	background-position:-29px 0;
-}
-ul.midia li.image	{
-	background-position:-66px 0;
-}
-ul.midia li.video	{
-	background-position:-111px 0;
+.content-type figure	{
+	float:left; margin-right:0.5em;
 }
 /*@6.3.lista-de-artigos*/
 
@@ -584,7 +570,7 @@ label span {
 	color: #8A1F11; 
 }
 .feedback.error p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/error.png) no-repeat left center;
+	background:url(modulos/8.17.mensagem-de-erro/img/error.png) no-repeat left center;
 }
 /*@8.17.mensagem-de-erro*/
 
@@ -596,7 +582,7 @@ label span {
 	color: #514721;
 }
 .feedback.alert p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/alert.png) no-repeat left center;
+	background:url(modulos/8.18.mensagem-de-alerta/img/alert.png) no-repeat left center;
 }
 /*@8.18.mensagem-de-alerta*/
 
@@ -608,7 +594,7 @@ label span {
 	color: #416997;
 }
 .feedback.information p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/info.png) no-repeat left center;
+	background:url(modulos/8.19.mensagem-de-informacao/img/info.png) no-repeat left center;
 }
 /*@8.19.mensagem-de-informacao*/
 
