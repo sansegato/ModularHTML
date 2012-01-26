@@ -1,12 +1,12 @@
 ModularHTML
 ===========
 
-Tendo como base o Pattern-Primer (https://github.com/adactio/Pattern-Primer), o ModularHTML é um repositório de código para agilizar, aperfeiçoar e padronizar a produção de páginas web. 
+Tendo como base o [Pattern-Primer](https://github.com/adactio/Pattern-Primer), o ModularHTML é um repositório de código para agilizar, aperfeiçoar e padronizar a produção de páginas web. 
 
 A Estrutura
 -----------
 
-**demo.php**
+###demo.php
 
 Lista todos os módulos existentes seguindo algumas categorias:
 
@@ -24,7 +24,7 @@ Veja a lista completa de módulos na [Wiki](https://github.com/a2comunicacao/Mod
 ###/modulos
 Pasta contendo todos os módulos existentes. Com o objetivo de manter a organização e o correto funcionamento da listagem dos módulos, alguns padrões precisam ser seguidos:
 
-####Regras de Nomenclatura
+#####Regras de Nomenclatura
 
 * Nomenclatura da pasta: (número da categoria do módulo).(número do módulo).(título-do-modulo-sem-espacos) --> 1.04.exemplo-de-modulo
 * Sempre usar letras minúsculas e sem acentos;
@@ -35,7 +35,7 @@ Pasta contendo todos os módulos existentes. Com o objetivo de manter a organiza
 
 Arquivo que contém as declarações de estilo de todos os módulos. Do mesmo modo que a nomenclatura das pastas de módulos, o CSS precisa seguir alguns padrões.
 
-####Padrões
+#####Padrões
 
 * O bloco de código com as declarações de estilo referentes ao módulo, deve ser envolvido por comentários CSS contendo o mesmo nome atribuído à pasta do módulo referente. Segue exemplo.
 
@@ -49,9 +49,9 @@ Arquivo que contém as declarações de estilo de todos os módulos. Do mesmo mo
 
 Arquivo que contém a chamada da biblioteca jQuery e dos scripts dos Módulos.
 
-####Padrões
+#####Padrões
 
-* Caso haja algum arquivo JS a ser chamada, ele deve ser colocado dentro da pasta 'modulos' que fica dentro da pasta 'js' na raiz do projeto ('/js/modulos').
+* Caso haja algum arquivo JS a ser chamada, ele deve ser colocado dentro da pasta 'modulos' que fica dentro da pasta '*js*' na raiz do projeto ('*/js/modulos*').
 * As chamadas dos scripts referentes ao módulo, devem ser envolvidas por comentários HTML contendo o mesmo nome atribuído à pasta do módulo referente. Segue exemplo.
 
 ``` html
@@ -70,10 +70,11 @@ Contribua
 
 Caso tenha idéia de algum módulo novo *fique a vontade para contribuir*.
 
-* Copie a pasta 0.0.exemplo-modulo (que está na raiz do projeto) dentro da pasta Módulos e renomeie-a seguindo as regras de nomenclatura.
-* Dentro da pasta de cada Módulo, existem dois arquivos: 'index.php' que é onde você deve escrever o HTML do Módulo, e 'demo.php' onde ficam as chamadas do CSS ('global.css'), do JS ('global.js.php') e da biblioteca 'Modernizr' para dar suporte aos navegadores mais antigos, caso algum módulo utilize tags do HTML5.
-* Resumindo: o código renderizado na página inicial do ModularHTML (tanto na visualização do código como do Módulo em si) é o que você escreve dentro do arquivo 'index.php'; já o arquivo 'demo.php' é o que é chamado na página de exemplo de cada Módulo.
-* Abra o arquivo 'global.css' localizado na raiz do projeto e, dentro da categoria marcada no CSS coloque as declarações de estilo do Módulo seguindo os padrões acima.
+* Copie a pasta *0.0.exemplo-modulo* (que está na raiz do projeto) dentro da pasta Módulos e renomeie-a seguindo as regras de nomenclatura.
+* Dentro da pasta de cada Módulo, existem dois arquivos: '*index.php*' que é onde você deve escrever o HTML do Módulo, e '*demo.php*' onde ficam as chamadas do CSS ('global.css'), do JS ('*global.js.php*') e da biblioteca '*Modernizr*' para dar suporte aos navegadores mais antigos, caso algum módulo utilize tags do HTML5.
+* Resumindo: o código renderizado na página do ModularHTML (tanto na visualização do código no lado direito, como do Módulo em si no lado esquerdo) é o que você escreve dentro do arquivo '*index.php*'; já o arquivo '*demo.php*' é o arquivo que é chamado na página de exemplo de cada Módulo.
+* Abra o arquivo 'global.css' localizado na raiz do projeto e, dentro da categoria marcada no CSS coloque as declarações de estilo do Módulo seguindo os padrões escritos acima.
+* Caso haja algum script, coloque-o na pasta 'modulos' dentro da pasta '*js*' ('*/js/modulos*') e faça as chamadas no arquivo '*global.js.php*', que está na raiz do projeto, seguindo os padrões escritos acima.
 
 Erros
 -----

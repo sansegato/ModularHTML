@@ -1,6 +1,6 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<!--@5.2.compartilhar -->
+<!--@5.02.compartilhar -->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -27,4 +27,4 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.2.compartilhar -->
+<!--@5.02.compartilhar -->
