@@ -3,20 +3,21 @@
 <meta charset="iso-8859-1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>ModularHTML</title>	
+<script type="text/javascript" src="js/libs/modernizr-2.0.6.min.js"></script>
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
-
 </head>
 <body>
 
 <?php include ('header.php'); ?>
 
 <div id="intro">
-	<p>ModularHTML &eacute; um reposit&oacute;rio de c&oacute;digo para agilizar, aperfei&ccedil;oar e padronizar a produ&ccedil;&atilde;o de p&aacute;ginas web</p>
-	<ul>
-		<li><a href="demo.php">Demonstra&ccedil;&atilde;o</a></li>
-		<li><a href="https://github.com/a2comunicacao/ModularHTML">Download</a></li>
-	</ul>
+	<p>ModularHTML é um repositório de código para agilizar, aperfeiçoar e padronizar a produção de páginas web</p>
+	<div class="links">
+		<a title="Demonstração" href="demo.php">Demonstração</a>
+		<span>|</span>
+		<a title="Download" href="https://github.com/a2comunicacao/ModularHTML">Download</a>
+	</div>
 	<div class="social-networks-share">
 		<div id="shareme" data-url="http://modularhtml.com.br/" data-text="Make your sharing widget with Sharrre (jQuery Plugin)"></div>
 	</div>
@@ -25,7 +26,11 @@
 <?php include ('footer.php'); ?>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<!--@5.02.compartilhar -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.links a:first-child').addClass('first');
+});
+</script>
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -44,7 +49,6 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.02.compartilhar -->
 
 <script type="text/javascript">
  var _gaq = _gaq || [];
