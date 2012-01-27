@@ -109,10 +109,15 @@ $(document).ready(function() {
 		}		
 	});	
 	
-	
-	
 });
 </script>
-
+<script type="text/javascript" src="js/jquery.fn.sortelements.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body div.modulo').sortElements(function(a, b){
+			return $(a).text() > $(b).text() ? 1 : -1;
+		});
+	});
+</script>
 </body>
 </html>
