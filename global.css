@@ -696,6 +696,14 @@ label span {
 }
 /*@8.08.radio*/
 
+/*@8.09.select+acao*/
+input[type=submit]:disabled {
+	border:solid 1px #e5e5e5;
+	color:#e5e5e5;
+	background-color:#f5f5f5;
+}
+/*@8.09.select+acao*/
+
 /*@8.13.fale-conosco*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
 .contact-form {

@@ -63,7 +63,6 @@ $(window).load(function() {
 <!--@4.03.slideshow -->
 	
 
-	
 <!--@5.02.compartilhar -->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
@@ -92,3 +91,21 @@ $('#shareme').sharrre({
 });
 </script>
 <!--@5.02.compartilhar -->
+
+
+<!--@8.09.select+acao-->
+<script type="text/javascript">
+$(document).ready(function () {
+	$('select option').click(function() {
+		var valor = $('select option:selected').val();
+		if ( valor =="" ) {
+			$('#enviar').attr('disabled', 'disabled');
+		} else {
+			$('#enviar').removeAttr('disabled');
+		}
+	});
+	
+});
+</script>
+<!--@8.09.select+acao-->
+
