@@ -89,7 +89,7 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* -------->>> Navegação <<<----------*/
 /* -----------------------------------*/
-/*@2.01.menu-horizontal-com-subitens*/
+/*@2.01.horizontal-dropdown-navigation*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -133,9 +133,9 @@ Amarelo				#dfb417
 	float:none;
 	list-style-type:none;
 }
-/*@2.01.menu-horizontal-com-subitens*/
+/*@2.01.horizontal-dropdown-navigation*/
 
-/*@2.02.menu-vertical-com-subitens*/
+/*@2.02.vertical-dropdown-navigation*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -180,9 +180,9 @@ Amarelo				#dfb417
 .vertical li.active #nav-secondary {
 	display:block;
 }
-/*@2.02.menu-vertical-com-subitens*/
+/*@2.02.vertical-dropdown-navigation*/
 
-/*@2.03.paginacao*/
+/*@2.03.pagination*/
 #pagination {
 	text-align:center;
 }
@@ -201,7 +201,7 @@ Amarelo				#dfb417
 	background-color: #449f91;
 	color:#fff;
 }
-/*@2.03.paginacao*/
+/*@2.03.pagination*/
 
 /*@2.04.breadcrumbs*/
 #breadcrumbs ul li {
@@ -215,7 +215,7 @@ Amarelo				#dfb417
 }
 /*@2.04.breadcrumbs*/
 
-/*@2.05.abas*/
+/*@2.05.tabs*/
 .tab {
 	width:98%;
 	padding:1%;
@@ -251,7 +251,7 @@ Amarelo				#dfb417
 	border:1px solid #82bfb5;
 }
 	
-/*@2.05.abas*/
+/*@2.05.tabs*/
 
 /* -----------------------------------*/
 /* ---------->>> Texto <<<------------*/
@@ -394,11 +394,11 @@ html[xmlns] .slides {
 /*@4.03.slideshow*/
 
 /*@4.04.thumbnails*/
-.thumb	{
+.thumbnails	{
 	float:left;
 	margin:0 5px;
 }
-.thumb a:hover	{
+.thumbnails a:hover	{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	-khtml-opacity: 0.7;
@@ -412,7 +412,7 @@ html[xmlns] .slides {
 /* ---------->>> Widget <<<-----------*/
 /* -----------------------------------*/
 
-/*@5.02.compartilhar*/
+/*@5.02.social-networks-share*/
 .social-networks-share	{
 	float:left; 
 	margin:68px 25% 0 25%;
@@ -421,9 +421,9 @@ html[xmlns] .slides {
 	float:left;
 	width:60px;
 }
-/*@5.02.compartilhar*/
+/*@5.02.social-networks-share*/
 
-/*@5.06.link-para-as-redes-sociais*/
+/*@5.06.social-networks*/
 #social-networks {
 	height:55px;
 }
@@ -488,7 +488,7 @@ html[xmlns] .slides {
 #social-networks li.rss a {
 	background-position: -462px -3px;
 }
-/*@5.06.link-para-as-redes-sociais*/
+/*@5.06.social-networks*/
 
 /* -----------------------------------*/
 /* ---------->>> Listas <<<-----------*/

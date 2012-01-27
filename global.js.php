@@ -28,10 +28,10 @@ $(document).ready(function(){
 	
 })
 </script>
-<!--@2.05.abas -->
+<!--@2.05.tabs -->
 
 
-<!--@2.08.nuvem-de-tags -->
+<!--@2.08.tag-cloud -->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	}
 });
 </script>
-<!--@2.08.nuvem-de-tags -->
+<!--@2.08.tag-cloud -->
 
 
 <!--@4.03.slideshow -->
@@ -64,7 +64,7 @@ $(window).load(function() {
 	
 
 	
-<!--@5.02.compartilhar -->
+<!--@5.02.social-networks-share -->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -91,4 +91,4 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.02.compartilhar -->
+<!--@5.02.social-networks-share -->
