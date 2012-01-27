@@ -217,7 +217,6 @@ Amarelo				#dfb417
 
 /*@2.05.abas*/
 .tab {
-	border:1px solid #82bfb5;
 	width:98%;
 	padding:1%;
 	display:none;
@@ -247,6 +246,9 @@ Amarelo				#dfb417
 #tab-nav li a.current {
 	background:#82bfb5;
 	color:#fff;
+}
+#tab-content	{
+	border:1px solid #82bfb5;
 }
 	
 /*@2.05.abas*/

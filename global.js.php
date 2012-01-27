@@ -5,17 +5,27 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-	$('#tab1').css('display', 'block');
+	$('#tab-content .tab:first-child').css('display', 'block');
+	$('#tab-nav li:first-child a').addClass('current');
+	
+	var alturaInicial = $('#tab-content .tab:first-child').innerHeight();
+	$('#tab-content').height(alturaInicial);
 
 	$('a', $('#tab-nav')).click(function() {
-		var i = $('a', $('#tab-nav')).index(this) + 1;
-		$(this).parents('#tabs')
-			.children('.tab:visible').hide();
-	  
-	  $('#tab' + i).show();
-	  $(this).parents('#tab-nav').find('a').removeClass('current');
-	  $(this).addClass('current');
-	})
+		var i = $('a', $('#tab-nav') ).index(this) + 1;
+		$(this).parents('#tabs').children('#tab-content').children('.tab:visible').hide();
+		$('#tab' + i).show();
+		$(this).parents('#tab-nav').find('a').removeClass('current');
+		$(this).addClass('current');
+		
+		var altura = $('#tab' + i ).innerHeight();
+		$('#tab-content').stop().animate({
+			height: altura
+		}, 'slow' );
+
+		return false;
+	});
+	
 })
 </script>
 <!--@2.05.abas -->
