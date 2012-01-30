@@ -15,9 +15,9 @@
 
 <?php
 	$dir = new DirectoryIterator( 'modulos' );
-	date_default_timezone_set('America/Sao_Paulo');
+	date_default_timezone_set('America/Sao_Paulo');	
 	
-	$css = file_get_contents('global.css');
+	$css = file_get_contents('global.css');			
 	
 	foreach($dir as $file ){
 		if (!$file->isDot() && $file->isDir()){
@@ -58,6 +58,19 @@
 			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
+			
+			print "<p class='dependencias'>";
+			if (file_exists("modulos/$file/dependencias.txt")) {
+				$abre = fopen ("modulos/$file/dependencias.txt", "r");
+				while (!feof ($abre)) {
+					$linha = fgets($abre, 4096);
+					echo '<a href="'.$linha.'">'.$linha."</a>";
+				}
+				fclose ($abre);				
+			} else {}
+			
+			print "</p>";
+			
 			print "</div>";
 			print "</div>";			
 			
