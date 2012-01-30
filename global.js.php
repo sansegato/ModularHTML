@@ -31,6 +31,33 @@ $(document).ready(function(){
 <!--@2.05.tabs -->
 
 
+<!--@2.07.accordion -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.item:first-child').addClass('open');
+	$('.item:first-child .item-content').css('display', 'block');
+	
+	$('.item').each(function() {
+		$(this).click(function() {
+			if ( $(this).hasClass('open') ) {
+				$(this).children('.item-content').slideUp('slow');
+				$(this).removeClass('open');
+				return false;
+			} else {
+				$('.item').children('.item-content').slideUp('slow');
+				$('.item').removeClass('open');
+				$(this).children('.item-content').slideDown('slow');
+				$(this).addClass('open');
+				return false;
+			}
+		});
+	});
+	
+});
+</script>
+<!--@2.07.accordion -->
+
+
 <!--@2.08.tag-cloud -->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>

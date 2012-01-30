@@ -47,6 +47,10 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 .modulo .info p.link		{ background:url(img/modulo.png) no-repeat scroll left center; }
 .modulo .info p.data		{ background:url(img/relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
 .modulo .info p.data span	{ font-size:12px; font-weight:bold; color:#666; }
+.modulo .info p.dependencias{ background:url(img/dependencias.png) no-repeat scroll left center; font-size:11px; font-weight:bold; }
+.modulo .info p.dependencias a{color:#067f6c; margin:0 5px 0 0;}
+.modulo .info p.dependencias a:hover{color:#FFF;}
+
 .modulo .info textarea		{ width: 95%; font-size:90%; font-family: Cambria, Georgia, serif; }
 
 .modulo .info .abas		{ display:block; margin:0; padding:0; width:100%; float:left;}
@@ -106,7 +110,6 @@ Amarelo				#dfb417
 	display:block;
 	background-color:#82bfb5;
 	color:#067f6c;
-	min-width:80px;
 }
 .horizontal li a:hover, 
 .horizontal li.active a, 
@@ -115,7 +118,7 @@ Amarelo				#dfb417
 	background-color:#449f91;
 }
 .horizontal li a.sub {
-	background:#82bfb5 url(modulos/2.01.menu-horizontal-com-subitens/img/seta.png) no-repeat scroll 95% 17px;
+	background:#82bfb5 url(modulos/2.01.horizontal-dropdown-navigation/img/seta.png) no-repeat scroll 95% 17px;
 }
 .horizontal li a.sub:hover {
 	background-position:95% -9px;
@@ -252,6 +255,44 @@ Amarelo				#dfb417
 }
 	
 /*@2.05.tabs*/
+
+/* CORES */
+/*
+Verde bem claro		#c1dfda
+Verde claro			#82bfb5
+Verde médio			#449f91
+Verde escuro		#067f6c
+Verde bem escuro	#033f36
+Amarelo				#dfb417
+*/
+
+/*@2.07.accordion*/
+.item	{
+	padding-bottom:20px;
+}
+.item h3 a,
+.item .item-content	{
+	width:96%;
+	padding:0 2%;
+}
+.item .item-content	{
+	display:none;
+}
+.item h3	{
+	margin:0;
+}
+.item h3 a	{
+	background-color:#c1dfda;
+	color:#449f91;
+	display:block;
+	text-decoration:none;
+}
+.item h3 a:hover,
+.item.open h3 a {
+	background-color:#449f91;
+	color:#fff;
+}
+/*@2.07.accordion*/
 
 /* -----------------------------------*/
 /* ---------->>> Texto <<<------------*/
