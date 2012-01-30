@@ -40,13 +40,13 @@ $(document).ready(function() {
 	$('.item').each(function() {
 		$(this).click(function() {
 			if ( $(this).hasClass('open') ) {
-				$(this).children('.item-content').slideUp('slow');
+				$(this).children('.item-content').slideUp();
 				$(this).removeClass('open');
 				return false;
 			} else {
-				$('.item').children('.item-content').slideUp('slow');
+				$('.item').children('.item-content').slideUp();
 				$('.item').removeClass('open');
-				$(this).children('.item-content').slideDown('slow');
+				$(this).children('.item-content').slideDown();
 				$(this).addClass('open');
 				return false;
 			}
