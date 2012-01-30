@@ -81,7 +81,7 @@ Erros
 Encontrou algum bug? Crie um 'issue' [aqui](https://github.com/a2comunicacao/ModularHTML/issues)
 
 
-Colaboradores
+Créditos
 -------------
 
 **Adriano Ribeiro**
@@ -107,3 +107,5 @@ Colaboradores
 **Vivian Oliveira**
 
 + http://twitter.com/viiholiveira
+
+Copyright (c) 2012 A2 Comunicação - Distribuído sob licença [MIT](http://opensource.org/licenses/mit-license.php).

@@ -15,9 +15,9 @@
 
 <?php
 	$dir = new DirectoryIterator( 'modulos' );
-	date_default_timezone_set('America/Sao_Paulo');
+	date_default_timezone_set('America/Sao_Paulo');	
 	
-	$css = file_get_contents('global.css');
+	$css = file_get_contents('global.css');			
 	
 	foreach($dir as $file ){
 		if (!$file->isDot() && $file->isDir()){
@@ -58,6 +58,19 @@
 			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
+			
+			print "<p class='dependencias'>";
+			if (file_exists("modulos/$file/dependencias.txt")) {
+				$abre = fopen ("modulos/$file/dependencias.txt", "r");
+				while (!feof ($abre)) {
+					$linha = fgets($abre, 4096);
+					echo '<a href="'.$linha.'">'.$linha."</a>";
+				}
+				fclose ($abre);				
+			} else {}
+			
+			print "</p>";
+			
 			print "</div>";
 			print "</div>";			
 			
@@ -130,6 +143,15 @@ $(document).ready(function() {
    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
  })();
+</script>
+
+<script type="text/javascript">
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/o4eOwYZ3zcPxhUGm9YH7w.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
 </script>
 
 </body>
