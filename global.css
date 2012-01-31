@@ -38,7 +38,7 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 
 .modulo 					{ clear: both; /*overflow: hidden;*/display:table; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.first				{ border-top: dotted 2px #ddd; }
-.modulo .visualizacao		{ width: 65%; float: left; }
+.modulo .visualizacao		{ width: 65%; float: left; max-width:1100px; }
 .modulo .info 				{ width: 30%; float: right; }
 .modulo .info p				{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
@@ -256,6 +256,59 @@ Amarelo				#dfb417
 	
 /*@2.05.navigation-tabs*/
 
+/*@2.06.carousel*/
+#carousel {}
+.es-carousel-wrapper{
+	background: #c1dfda;
+	padding:10px 40px;
+	position:relative;
+}
+.es-carousel{
+	overflow:hidden;
+}
+.es-carousel ul{
+	display:none;
+	overflow:hidden;
+	padding:0;
+}
+.es-carousel ul li{
+	height:100%;
+	float:left;
+	display:block;
+}
+.es-carousel ul li a{
+	display:block;
+	border-style:solid;
+	border-color:#82bfb5;
+}
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+}
+.es-nav span{
+	position:absolute;
+	top:50%;
+	left:12px;
+	background:transparent url(modulos/2.06.carousel/img/nav.png) no-repeat top left;
+	width:14px;
+	height:26px;
+	margin-top:-13px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.8;
+}
+.es-nav span.es-nav-next{
+	right:12px;
+	left:auto;
+	background-position:top right;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}
+/*@2.06.carousel*/
+
 /* CORES */
 /*
 Verde bem claro		#c1dfda
@@ -267,28 +320,27 @@ Amarelo				#dfb417
 */
 
 /*@2.07.navigation-accordion*/
-.item	{
-	padding-bottom:20px;
-}
-.item h3 a,
-.item .item-content	{
+
+.accordion-item	{}
+.accordion-title a,
+.accordion-content	{
 	width:96%;
 	padding:0 2%;
 }
-.item .item-content	{
-	display:none;
-}
-.item h3	{
+.accordion-title	{
 	margin:0;
 }
-.item h3 a	{
+.accordion-content {
+	display:none;
+}
+.accordion-title a	{
 	background-color:#c1dfda;
 	color:#449f91;
 	display:block;
 	text-decoration:none;
 }
-.item h3 a:hover,
-.item.open h3 a {
+.accordion-title a:hover,
+.accordion-title.open a {
 	background-color:#449f91;
 	color:#fff;
 }

@@ -31,28 +31,40 @@ $(document).ready(function(){
 <!--@2.05.tabs -->
 
 
+<!--@2.06.carousel -->
+<script type="text/javascript" src="/js/modulos/jquery.elastislide.js"></script>
+<script type="text/javascript">	
+$('#carousel').elastislide({
+	imageW 	: 90,
+	margin	: 10,
+	minItems	: 1
+});
+</script>
+<!--@2.06.carousel -->
+
+
 <!--@2.07.accordion -->
 <script type="text/javascript">
 $(document).ready(function() {
-	$('.item:first-child').addClass('open');
-	$('.item:first-child .item-content').css('display', 'block');
+	var firstAccordion = $('.accordion-item:first-child');
+	firstAccordion.find('.accordion-title').addClass('open');
+	firstAccordion.find('.accordion-content').css('display','block');
 	
-	$('.item').each(function() {
+	$('.accordion-item').find('.accordion-title').each(function() {
 		$(this).click(function() {
 			if ( $(this).hasClass('open') ) {
-				$(this).children('.item-content').slideUp('slow');
 				$(this).removeClass('open');
-				return false;
-			} else {
-				$('.item').children('.item-content').slideUp('slow');
-				$('.item').removeClass('open');
-				$(this).children('.item-content').slideDown('slow');
+				$(this).siblings('.accordion-content').slideUp('slow');
+			} 
+			else {
+				$('.accordion-item').find('.accordion-title').removeClass('open');
+				$('.accordion-item').find('.accordion-content').slideUp('slow');
 				$(this).addClass('open');
-				return false;
+				$(this).siblings('.accordion-content').slideDown('slow');
 			}
+			return false;
 		});
 	});
-	
 });
 </script>
 <!--@2.07.accordion -->
