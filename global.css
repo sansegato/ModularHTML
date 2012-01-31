@@ -798,6 +798,21 @@ input[type=submit]:disabled {
 }
 /*@8.09.form-select+action*/
 
+/*@8.11.search-field*/
+.search	{
+	width:80%;
+	margin-right:5%;
+	float:left;
+}
+.search .input-text	{
+	padding-bottom:5px;
+	padding-top:5px;
+}
+#search-form .input-submit	{
+	width:15%;
+}
+/*@8.11.search-field*/
+
 /*@8.13.form-contact*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
 .contact-form {

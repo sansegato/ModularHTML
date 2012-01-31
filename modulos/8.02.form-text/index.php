@@ -1,1 +1,1 @@
-<input type="text" id="name" name="name" class="input-text" />
+<input type="text" id="example-input" name="name" class="input-text" />
