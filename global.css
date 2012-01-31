@@ -796,6 +796,22 @@ input[type=submit]:disabled {
 }
 /*@8.09.select+acao*/
 
+/*@8.11.search-field*/
+.search	{
+	float:left;
+	width:80%;
+	margin-right:5%;
+}
+.search .input-text	{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#search-form .input-submit	{
+	float:left;
+	width:15%;
+}
+/*@8.11.search-field*/
+
 /*@8.13.fale-conosco*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
 .contact-form {
