@@ -147,4 +147,25 @@ $(document).ready(function () {
 </script>
 <!--@8.09.select+acao-->
 
+<!--@8.11.search-field -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('input[type=text], textarea').each(function(){
+		$(this).val($(this).attr('title'));
+	});
+	
+	$('input[type=text], textarea').focus(function() {	
+		if ( ( $(this).val() == $(this).attr('title') ) ) {
+			$(this).val("");
+		}
+	});
+	$('input[type=text], textarea').blur(function() {
+		if( $(this).val() == "") {
+			$(this).val( $(this).attr('title') );
+		}
+	});
+});
+</script>
+<!--@8.11.search-field -->
+
 
