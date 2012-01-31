@@ -1,0 +1,1 @@
+<textarea id="message" name="message" class="input-textarea"></textarea> 

@@ -93,7 +93,7 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* -------->>> Navegação <<<----------*/
 /* -----------------------------------*/
-/*@2.01.horizontal-dropdown-navigation*/
+/*@2.01.navigation-horizontal-dropdown*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -118,7 +118,7 @@ Amarelo				#dfb417
 	background-color:#449f91;
 }
 .horizontal li a.sub {
-	background:#82bfb5 url(modulos/2.01.horizontal-dropdown-navigation/img/seta.png) no-repeat scroll 95% 17px;
+	background:#82bfb5 url(modulos/2.01.navigation-horizontal-dropdown/img/seta.png) no-repeat scroll 95% 17px;
 }
 .horizontal li a.sub:hover {
 	background-position:95% -9px;
@@ -136,9 +136,9 @@ Amarelo				#dfb417
 	float:none;
 	list-style-type:none;
 }
-/*@2.01.horizontal-dropdown-navigation*/
+/*@2.01.navigation-horizontal-dropdown*/
 
-/*@2.02.vertical-dropdown-navigation*/
+/*@2.02.navigation-vertical-dropdown*/
 #nav-primary {
 	overflow:hidden;
 }
@@ -183,9 +183,9 @@ Amarelo				#dfb417
 .vertical li.active #nav-secondary {
 	display:block;
 }
-/*@2.02.vertical-dropdown-navigation*/
+/*@2.02.navigation-vertical-dropdown*/
 
-/*@2.03.pagination*/
+/*@2.03.navigation-pagination*/
 #pagination {
 	text-align:center;
 }
@@ -204,9 +204,9 @@ Amarelo				#dfb417
 	background-color: #449f91;
 	color:#fff;
 }
-/*@2.03.pagination*/
+/*@2.03.navigation-pagination*/
 
-/*@2.04.breadcrumbs*/
+/*@2.04.navigation-breadcrumbs*/
 #breadcrumbs ul li {
 	float:left;
 	padding: 0 10px 0 30px;
@@ -216,9 +216,9 @@ Amarelo				#dfb417
 	padding: 0 10px 0 0;
 	background:none;
 }
-/*@2.04.breadcrumbs*/
+/*@2.04.navigation-breadcrumbs*/
 
-/*@2.05.tabs*/
+/*@2.05.navigation-tabs*/
 .tab {
 	width:98%;
 	padding:1%;
@@ -254,7 +254,7 @@ Amarelo				#dfb417
 	border:1px solid #82bfb5;
 }
 	
-/*@2.05.tabs*/
+/*@2.05.navigation-tabs*/
 
 /* CORES */
 /*
@@ -266,7 +266,7 @@ Verde bem escuro	#033f36
 Amarelo				#dfb417
 */
 
-/*@2.07.accordion*/
+/*@2.07.navigation-accordion*/
 .item	{
 	padding-bottom:20px;
 }
@@ -292,7 +292,7 @@ Amarelo				#dfb417
 	background-color:#449f91;
 	color:#fff;
 }
-/*@2.07.accordion*/
+/*@2.07.navigation-accordion*/
 
 /* -----------------------------------*/
 /* ---------->>> Texto <<<------------*/
@@ -302,7 +302,7 @@ Amarelo				#dfb417
 /* -----------------------------------*/
 /* ---------->>> Imagem <<<-----------*/
 /* -----------------------------------*/
-/*@4.03.slideshow*/
+/*@4.03.image-slideshow*/
 .flex-container a:active,
 .slideshow a:active	{
 	outline: none;
@@ -384,7 +384,7 @@ html[xmlns] .slides {
 	height: 52px; 
 	margin: -13px 0 0; 
 	display: block; 
-	background: url(modulos/4.03.slideshow/img/bg_direction_nav.png) no-repeat 0 0; 
+	background: url(modulos/4.03.image-slideshow/img/bg_direction_nav.png) no-repeat 0 0; 
 	position: absolute; 
 	top: 50%; 
 	cursor: pointer; 
@@ -421,7 +421,7 @@ html[xmlns] .slides {
 	width: 13px; 
 	height: 13px; 
 	display: block; 
-	background: url(modulos/4.03.slideshow/img/bg_control_nav.png) no-repeat 0 0; 
+	background: url(modulos/4.03.image-slideshow/img/bg_control_nav.png) no-repeat 0 0; 
 	cursor: pointer; 
 	text-indent: -9999px;
 }
@@ -432,7 +432,7 @@ html[xmlns] .slides {
 	background-position: 0 -26px; 
 	cursor: default;
 }
-/*@4.03.slideshow*/
+/*@4.03.image-slideshow*/
 
 /*@4.04.thumbnails*/
 .thumbnails	{
@@ -453,7 +453,7 @@ html[xmlns] .slides {
 /* ---------->>> Widget <<<-----------*/
 /* -----------------------------------*/
 
-/*@5.02.social-networks-share*/
+/*@5.02.widget-social-networks-share*/
 .social-networks-share	{
 	float:left; 
 	margin:68px 25% 0 25%;
@@ -462,9 +462,9 @@ html[xmlns] .slides {
 	float:left;
 	width:60px;
 }
-/*@5.02.social-networks-share*/
+/*@5.02.widget-social-networks-share*/
 
-/*@5.06.social-networks*/
+/*@5.06.widget-social-networks*/
 #social-networks {
 	height:55px;
 }
@@ -484,7 +484,7 @@ html[xmlns] .slides {
 	height: 30px;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: url(modulos/5.06.social-networks/img/redes_sociais.png) no-repeat;
+	background: url(modulos/5.06.widget-social-networks/img/redes_sociais.png) no-repeat;
 	display: block;
 	position: relative;
 	z-index: 2;
@@ -529,7 +529,7 @@ html[xmlns] .slides {
 #social-networks li.rss a {
 	background-position: -462px -3px;
 }
-/*@5.06.social-networks*/
+/*@5.06.widget-social-networks*/
 
 /* -----------------------------------*/
 /* ---------->>> Listas <<<-----------*/
@@ -658,7 +658,7 @@ ul.list-articles .subtitle	{
 /* -----------------------------------*/
 /* ------->>> Formulário <<<----------*/
 /* -----------------------------------*/
-/*@8.01.label*/
+/*@8.01.form-label*/
 label {
 	display:block;
 	margin:5px 0px 10px 0px;
@@ -675,13 +675,13 @@ label span {
 .input-text:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.01.label*/
+/*@8.01.form-label*/
 
-/*@8.02.input-text*/
+/*@8.02.form-text*/
 /*propriedade herdada do item anterior*/
-/*@8.02.input-text*/
+/*@8.02.form-text*/
 
-/*@8.03.input-text*/
+/*@8.03.form-submit*/
 .input-submit {
 	background-color:#c1dfda;
 	color:#449f91;
@@ -692,9 +692,9 @@ label span {
 	background-color:#82bfb5;
 	color:#fff;
 }
-/*@8.03.input-text*/
+/*@8.03.form-submit*/
 
-/*@8.04.input-textarea*/
+/*@8.04.form-textarea*/
 .input-textarea {
 	border:solid 1px #c1dfda;
 	color:#999999;
@@ -702,15 +702,15 @@ label span {
 .input-textarea:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.04.input-textarea*/
+/*@8.04.form-textarea*/
 
-/*@8.05.input-file*/
+/*@8.05.form-file*/
 .input-file {
 	color:#999;
 }
-/*@8.05.input-file*/
+/*@8.05.form-file*/
 
-/*@8.06.select*/
+/*@8.06.form-select*/
 .select-form {
 	border:solid 1px #c1dfda;
 	color:#999999;
@@ -718,34 +718,34 @@ label span {
 .select-form:focus {
 	border:solid 1px #82bfb5;
 }
-/*@8.06.select*/
+/*@8.06.form-select*/
 
-/*@8.07.input-checkbox*/
+/*@8.07.form-checkbox*/
 .input-checkbox {
 	margin-right: 10px;
 	padding: 0;
 	vertical-align: baseline;
 	color:#999999;
 }
-/*@8.07.input-checkbox*/
+/*@8.07.form-checkbox*/
 
-/*@8.08.radio*/
+/*@8.08.form-radio*/
 .input-radio {
 	margin-right: 10px;
 	padding: 0;
 	vertical-align: baseline;
 }
-/*@8.08.radio*/
+/*@8.08.form-radio*/
 
-/*@8.09.select+acao*/
+/*@8.09.form-select+action*/
 input[type=submit]:disabled {
 	border:solid 1px #e5e5e5;
 	color:#e5e5e5;
 	background-color:#f5f5f5;
 }
-/*@8.09.select+acao*/
+/*@8.09.form-select+action*/
 
-/*@8.13.fale-conosco*/
+/*@8.13.form-contact*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
 .contact-form {
 	width:96%;
@@ -768,13 +768,13 @@ input[type=submit]:disabled {
 	float:left;
 	width:80%;
 }
-/*@8.13.fale-conosco*/
+/*@8.13.form-contact*/
 
-/*@8.14.login*/
+/*@8.14.form-login/
 /* Propriedades de CSS herdadas dos Módulos 8.13 e 8.1 */
-/*@8.14.login*/
+/*@8.14.form-login*/
 
-/*@8.16.mensagem-de-sucesso*/
+/*@8.16.form-feedback-success*/
 .feedback	{
 	display:block;
 	width:96%;
@@ -792,11 +792,11 @@ input[type=submit]:disabled {
 	color: #264409; 
 }
 .feedback.success p { 
-	background:url(modulos/8.16.mensagem-de-sucesso/img/success.png) no-repeat left center;
+	background:url(modulos/8.16.form-feedback-success/img/success.png) no-repeat left center;
 }
-/*@8.16.mensagem-de-sucesso*/
+/*@8.16.form-feedback-success*/
 
-/*@8.17.mensagem-de-erro*/
+/*@8.17.form-feedback-error*/
 /* Propriedades da classe 'feedback' herdadas do Módulo anterior */
 .feedback.error {
 	background-color:#FBE3E4; 
@@ -804,11 +804,11 @@ input[type=submit]:disabled {
 	color: #8A1F11; 
 }
 .feedback.error p { 
-	background:url(modulos/8.17.mensagem-de-erro/img/error.png) no-repeat left center;
+	background:url(modulos/8.17.form-feedback-error/img/error.png) no-repeat left center;
 }
-/*@8.17.mensagem-de-erro*/
+/*@8.17.form-feedback-error*/
 
-/*@8.18.mensagem-de-alerta*/
+/*@8.18.form-feedback-alert*/
 /* Propriedades da classe 'feedback' herdadas do Módulo 8.16 */
 .feedback.alert {
 	background-color:#FFF6BF;
@@ -816,11 +816,11 @@ input[type=submit]:disabled {
 	color: #514721;
 }
 .feedback.alert p { 
-	background:url(modulos/8.18.mensagem-de-alerta/img/alert.png) no-repeat left center;
+	background:url(modulos/8.18.form-feedback-alert/img/alert.png) no-repeat left center;
 }
-/*@8.18.mensagem-de-alerta*/
+/*@8.18.form-feedback-alert*/
 
-/*@8.19.mensagem-de-informacao*/
+/*@8.19.form-feedback-information*/
 /* Propriedades da classe 'feedback' herdadas do Módulo 8.16 */
 .feedback.information {
 	background-color:#d8f7ff;
@@ -828,11 +828,11 @@ input[type=submit]:disabled {
 	color: #416997;
 }
 .feedback.information p { 
-	background:url(modulos/8.19.mensagem-de-informacao/img/info.png) no-repeat left center;
+	background:url(modulos/8.19.form-feedback-information/img/info.png) no-repeat left center;
 }
-/*@8.19.mensagem-de-informacao*/
+/*@8.19.form-feedback-information*/
 
-/*@8.20.botao*/
+/*@8.20.form-button*/
 button[type=submit] { 
 	background-color:#c1dfda;
 	color:#449f91;
@@ -843,7 +843,7 @@ button[type=submit]:hover	{
 	background-color:#82bfb5;
 	color:#fff;
 }
-/*@8.20.botao*/
+/*@8.20.form-button*/
 
 
 

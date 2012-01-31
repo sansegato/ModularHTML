@@ -1,1 +1,0 @@
-<input type="submit" value="Enviar" name="Enviar" id="enviar" class="input-submit" />

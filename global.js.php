@@ -58,7 +58,7 @@ $(document).ready(function() {
 <!--@2.07.accordion -->
 
 
-<!--@2.08.tag-cloud -->
+<!--@2.08.navigation-tag-cloud -->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	}
 });
 </script>
-<!--@2.08.tag-cloud -->
+<!--@2.08.navigation-tag-cloud -->
 
 
 <!--@4.03.slideshow -->

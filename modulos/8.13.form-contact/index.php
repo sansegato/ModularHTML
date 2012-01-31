@@ -1,16 +1,16 @@
 <form action="#" method="post" class="contact-form">
 	<fieldset>
-		<label for="nome">
+		<label for="name">
 			<span>Nome</span>
-			<input type="text" id="nome" class="input-text" />
+			<input type="text" id="name" class="input-text" />
 		</label>
 		<label for="email">
 			<span>E-mail</span>
 			<input type="text" id="email" class="input-text" />
 		</label>
-		<label for="cidade">
+		<label for="city">
 			<span>Cidade</span>
-			<input type="text" id="cidade" class="input-text" />
+			<input type="text" id="city" class="input-text" />
 		</label>
 		<label class="ddd" for="ddd">
 			<span>DDD</span>
@@ -18,14 +18,14 @@
 		</label>
 		<label class="phone" for="telefone">
 			<span>Telefone</span>
-			<input type="text" id="telefone" class="input-text" />
+			<input type="text" id="phone" class="input-text" />
 		</label>
-		<label for="mensagem">
+		<label for="message">
 			<span>Mensagem</span>
-			<textarea id="mensagem" name="mensagem" class="input-textarea"></textarea> 
+			<textarea id="mensagem" name="message" class="input-textarea"></textarea> 
 		</label>
-		<label for="enviar">
-			<input id="enviar" type="submit" value="Enviar" name="Enviar" class="input-submit" />
+		<label for="submit">
+			<input id="submit" type="submit" value="Enviar" name="Submit" class="input-submit" />
 		</label>
 	</fieldset>
 </form>

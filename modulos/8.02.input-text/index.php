@@ -1,1 +1,0 @@
-<input type="text" id="nome" name="nome" class="input-text" />
