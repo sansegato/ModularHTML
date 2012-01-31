@@ -1,26 +1,26 @@
 <div class="accordion">
-	<div class="item">
-		<h3><a href="#">Item 1</a></h3>
-		<div class="item-content">
-			<p>Reflexionis suo aperuit in deinde cepit roseo commendavit auri. Stranguillione in rei completo litus vita Apolloni figitur acquievit. Discumbere acies regina in rei sensibilium iussit est cum autem Apolloni dicere nec benedictus filiae gloriam virginis instaret. Proiciens te sed esse ait regem Boreas quam dicentes parem. Triton testandum ecce prima inrumpit dic enim est amet Cur meae in modo genito in modo genito in.</p>
+	<div class="accordion-item">
+		<h3 class="accordion-title"><a href="#">Item 1</a></h3>
+		<div class="accordion-content">
+			Lorem ipsum dolor sit amet, apertius ingens amorem infirmata dictum ait Cumque hoc. Theophilus ut sua coniuge sancta eundem lacrimas illa mihi esse ait in lucem genero nomine Hesterna studiis ascende meae. Nutricem valeas filia puella mihi servitute meam celebrabantur Apollonius in lucem in lucem exempli. Christe in fuerat est cum unde meae ad suis. Excepteur sola habiturus in modo genito in lucem exitum vivit.
 		</div>
 	</div>
-	<div class="item">
-		<h3><a href="#">Item 2</a></h3>
-		<div class="item-content">
-			<p>Reflexionis suo aperuit in deinde cepit roseo commendavit auri. Stranguillione in rei completo litus vita Apolloni figitur acquievit. Discumbere acies regina in rei sensibilium iussit est cum autem Apolloni dicere nec benedictus filiae gloriam virginis instaret. Proiciens te sed esse ait regem Boreas quam dicentes parem. Triton testandum ecce prima inrumpit dic enim est amet Cur meae in modo genito in modo genito in.</p>
+	<div class="accordion-item">
+		<h3 class="accordion-title"><a href="#">Item 2</a></h3>
+		<div class="accordion-content">
+			Lorem ipsum dolor sit amet, apertius ingens amorem infirmata dictum ait Cumque hoc. Theophilus ut sua coniuge sancta eundem lacrimas illa mihi esse ait in lucem genero nomine Hesterna studiis ascende meae. Nutricem valeas filia puella mihi servitute meam celebrabantur Apollonius in lucem in lucem exempli. Christe in fuerat est cum unde meae ad suis. Excepteur sola habiturus in modo genito in lucem exitum vivit.
 		</div>
 	</div>
-	<div class="item">
-		<h3><a href="#">Item 3</a></h3>
-		<div class="item-content">
-			<p>Reflexionis suo aperuit in deinde cepit roseo commendavit auri. Stranguillione in rei completo litus vita Apolloni figitur acquievit. Discumbere acies regina in rei sensibilium iussit est cum autem Apolloni dicere nec benedictus filiae gloriam virginis instaret. Proiciens te sed esse ait regem Boreas quam dicentes parem. Triton testandum ecce prima inrumpit dic enim est amet Cur meae in modo genito in modo genito in.</p>
+	<div class="accordion-item">
+		<h3 class="accordion-title"><a href="#">Item 3</a></h3>
+		<div class="accordion-content">
+			Lorem ipsum dolor sit amet, apertius ingens amorem infirmata dictum ait Cumque hoc. Theophilus ut sua coniuge sancta eundem lacrimas illa mihi esse ait in lucem genero nomine Hesterna studiis ascende meae. Nutricem valeas filia puella mihi servitute meam celebrabantur Apollonius in lucem in lucem exempli. Christe in fuerat est cum unde meae ad suis. Excepteur sola habiturus in modo genito in lucem exitum vivit.
 		</div>
 	</div>
-	<div class="item">
-		<h3><a href="#">Item 4</a></h3>
-		<div class="item-content">
-			<p>Reflexionis suo aperuit in deinde cepit roseo commendavit auri. Stranguillione in rei completo litus vita Apolloni figitur acquievit. Discumbere acies regina in rei sensibilium iussit est cum autem Apolloni dicere nec benedictus filiae gloriam virginis instaret. Proiciens te sed esse ait regem Boreas quam dicentes parem. Triton testandum ecce prima inrumpit dic enim est amet Cur meae in modo genito in modo genito in.</p>
+	<div class="accordion-item">
+		<h3 class="accordion-title"><a href="#">Item 4</a></h3>
+		<div class="accordion-content">
+			Lorem ipsum dolor sit amet, apertius ingens amorem infirmata dictum ait Cumque hoc. Theophilus ut sua coniuge sancta eundem lacrimas illa mihi esse ait in lucem genero nomine Hesterna studiis ascende meae. Nutricem valeas filia puella mihi servitute meam celebrabantur Apollonius in lucem in lucem exempli. Christe in fuerat est cum unde meae ad suis. Excepteur sola habiturus in modo genito in lucem exitum vivit.
 		</div>
 	</div>
 </div>
