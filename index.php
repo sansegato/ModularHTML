@@ -12,9 +12,9 @@
 <?php include ('header.php'); ?>
 
 <div id="intro">
-	<p>ModularHTML é um repositório de código para agilizar, aperfeiçoar e padronizar a produção de páginas web</p>
+	<p>ModularHTML é um guia de estilo para código HTML semântico e padronizado</p>
 	<div class="links">
-		<a title="Demonstração" href="demo.php">Demonstração</a>
+		<a title="Acessar" href="demo.php">Acessar</a>
 		<span>|</span>
 		<a title="Download" href="https://github.com/a2comunicacao/ModularHTML">Download</a>
 	</div>
