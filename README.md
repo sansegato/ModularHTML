@@ -69,20 +69,22 @@ $(document).ready(function() {
 Contribua
 ---------
 
-Caso tenha idéia de algum módulo novo *fique a vontade para contribuir*.
+Caso tenha idéia de algum módulo novo ou sugestões de melhorias para algum existente, *fique a vontade para contribuir*.
 
 * Copie a pasta *0.0.exemplo-modulo* (que está na raiz do projeto) dentro da pasta Módulos e renomeie-a seguindo as regras de nomenclatura.
 * Dentro da pasta de cada Módulo, existem três arquivos: 
 
 >'*index.php*': que é onde você deve escrever o HTML do Módulo; 
 
->'*demo.php*': onde ficam as chamadas do CSS global ('global.css'), do JS global ('*global.js.php*') e da biblioteca '*Modernizr*' (para dar suporte aos navegadores mais antigos, caso algum módulo utilize tags do HTML5);
+>'*demo.php*': arquivo onde ficam as chamadas dos arquivos globais ('*CSS e JS*');
 
-> '*dependencias.txt*': onde você deverá escrever o nome dos scripts utilizados pelo Módulo (aqui você deve escrever exatamente como está na pasta '*modulos*' dentro da pasta '*js*' na raiz do projeto. Fazendo isso, automaticamente os arquivos escritos aparecem como opções de download na página inicial).
+> '*dependencias.txt*': onde você deverá escrever o nome dos scripts e dependências do Módulo (aqui você deve escrever exatamente como está escrito na pasta '*modulos*' dentro da pasta '*js*' na raiz do projeto. Fazendo isso, automaticamente os arquivos escritos nesse .'*.txt*'aparecem como opções de download na área de dependências do Módulo). 
+Caso precise, como padrão para essa versão, utilizamos as bibliotecas Modernizr 2.0.6 ('*modernizr-2.0.6.min.js*') e jQuery 1.7.1 ('*jquery-1.7.1.js*'), essa última que já vem chamada no arquivo de dependências dentro da pasta de exemplo de módulo (0.0.exemplo-de-modulo).
 
 * Resumindo: o código renderizado na página do ModularHTML (tanto na visualização do código no lado direito, como do Módulo em si no lado esquerdo) é o que você escreve dentro do arquivo '*index.php*'; já o arquivo '*demo.php*' é o arquivo que é chamado na página de exemplo de cada Módulo.
 * Abra o arquivo 'global.css' localizado na raiz do projeto e, dentro da categoria marcada no CSS coloque as declarações de estilo do Módulo seguindo os padrões escritos acima.
 * Caso haja algum script, coloque-o na pasta 'modulos' dentro da pasta '*js*' ('*/js/modulos*') e faça as chamadas no arquivo '*global.js.php*', que está na raiz do projeto, seguindo os padrões escritos acima.
+
 
 Erros
 -----
