@@ -1,7 +1,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
-<!--@2.05.abas-->
+<!--@2.05.navigation-tabs-->
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -28,10 +28,10 @@ $(document).ready(function(){
 	
 })
 </script>
-<!--@2.05.tabs-->
+<!--@2.05.navigation-tabs-->
 
 
-<!--@2.06.carousel-->
+<!--@2.06.navigation-carousel-->
 <script type="text/javascript" src="/js/modulos/jquery.elastislide.js"></script>
 <script type="text/javascript">	
 $('#carousel').elastislide({
@@ -40,10 +40,10 @@ $('#carousel').elastislide({
 	minItems	: 3
 });
 </script>
-<!--@2.06.carousel-->
+<!--@2.06.navigation-carousel-->
 
 
-<!--@2.07.accordion-->
+<!--@2.07.navigation-accordion-->
 <script type="text/javascript">
 $(document).ready(function() {
 	var firstAccordion = $('.accordion-item:first-child');
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 });
 </script>
-<!--@2.07.accordion-->
+<!--@2.07.navigation-accordion-->
 
 
 <!--@2.08.navigation-tag-cloud-->
@@ -92,14 +92,14 @@ $(document).ready(function() {
 <!--@2.08.navigation-tag-cloud-->
 
 
-<!--@4.03.slideshow-->
+<!--@4.03.image-slideshow-->
 <script type="text/javascript" src="/js/modulos/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
 	$('.slideshow').flexslider();
 });
 </script>
-<!--@4.03.slideshow-->
+<!--@4.03.image-slideshow-->
 	
 	
 <!--@5.02.social-networks-share-->
@@ -131,7 +131,7 @@ $('#shareme').sharrre({
 </script>
 <!--@5.02.social-networks-share-->
 
-<!--@8.09.select+acao-->
+<!--@8.09.form-select+action-->
 <script type="text/javascript">
 $(document).ready(function () {
 	$('select option').click(function() {
@@ -145,7 +145,7 @@ $(document).ready(function () {
 	
 });
 </script>
-<!--@8.09.select+acao-->
+<!--@8.09.form-select+action-->
 
 <!--@8.11.search-field-->
 <script type="text/javascript">
