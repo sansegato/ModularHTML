@@ -36,9 +36,10 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 #intro div.social-networks-share #shareme { display: inline-block; }
 #intro .twitter { line-height: 2.1 ;}
 
-.modulo 					{ clear: both; /*overflow: hidden;*/display:table; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
+.modulo 					{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.first				{ border-top: dotted 2px #ddd; }
-.modulo .visualizacao		{ width: 65%; float: left; max-width:1100px; }
+.modulo .visualizacao		{ width: 65%; float: left; }
+.codigo						{ width:96%; padding:0 2%; }
 .modulo .info 				{ width: 30%; float: right; }
 .modulo .info p				{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
@@ -257,7 +258,6 @@ Amarelo				#dfb417
 /*@2.05.navigation-tabs*/
 
 /*@2.06.carousel*/
-#carousel {}
 .es-carousel-wrapper{
 	background: #c1dfda;
 	padding:10px 40px;
@@ -379,6 +379,7 @@ Amarelo				#dfb417
 .slideshow .slides img {
 	max-width: 100%; 
 	display: block;
+	margin:0 auto;
 }
 .flex-pauseplay span {
 	text-transform: capitalize;

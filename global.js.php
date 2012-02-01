@@ -37,7 +37,7 @@ $(document).ready(function(){
 $('#carousel').elastislide({
 	imageW 	: 90,
 	margin	: 10,
-	minItems	: 1
+	minItems	: 3
 });
 </script>
 <!--@2.06.carousel -->

@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	<div id="main" style="max-width:1120px;">
+	<div id="main" style="max-width:650px;">
 		<?php include ('index.php'); ?>
 	</div>
 	<?php include('../../global.js.php'); ?>
