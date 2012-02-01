@@ -1,6 +1,7 @@
 <script type="text/javascript" src="js/syntax/scripts/shCore.js"></script>
 <script type="text/javascript" src="js/syntax/scripts/shBrushXml.js"></script>
 <script type="text/javascript" src="js/syntax/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="js/syntax/scripts/shBrushJScript.js"></script>
 <link type="text/css" rel="stylesheet" href="js/syntax/styles/shCore.css"/>
 <link type="text/css" rel="stylesheet" href="js/syntax/styles/shThemeRDark.css"/>	
 <script type="text/javascript">

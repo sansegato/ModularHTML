@@ -69,7 +69,7 @@
 			if(preg_match("/".$dname."/", $jsConteudo)){
 				$addJs = explode ($marcacaoJS, $jsConteudo);
 				print "<div class='js'>";
-				print "<pre class='brush: html;'>";
+				print "<pre class='brush: js;'>";
 				echo htmlspecialchars($addJs[1]);
 				print "</pre>";
 				print "</div>";

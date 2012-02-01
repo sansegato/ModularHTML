@@ -70,7 +70,6 @@ $(document).ready(function() {
 
 
 <!--@2.08.navigation-tag-cloud-->
-<!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -90,6 +89,31 @@ $(document).ready(function() {
 </script>
 <!--@2.08.navigation-tag-cloud-->
 
+<!--@2.09.navigation-glossary-->
+<script src="/js/modulos/jquery.listnav.pack-2.1.js"></script>		
+<script charset="utf-8" type="text/javascript">
+	$(document).ready(function(){
+		var url = document.URL.split('#')[1];
+		if(url){
+			var primeiraLetra = url.charAt(0);
+		}
+		if(primeiraLetra != ''){
+			$('#abc').listnav({
+				initLetter: primeiraLetra,
+				includeAll: false,
+				noMatchText: 'N&atilde;o h&aacute; itens com essa letra.',
+				includeNums: false
+			});	
+		}else{
+			$('#abc').listnav({
+				includeAll: false,
+				noMatchText: 'N&atilde;o h&aacute; itens com essa letra.',
+				includeNums: false
+			});	
+		}
+	});
+</script>	
+<!--@2.09.navigation-glossary-->
 
 <!--@4.03.image-slideshow-->
 <script type="text/javascript" src="/js/modulos/jquery.flexslider-min.js"></script>
