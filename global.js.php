@@ -146,7 +146,7 @@ $(document).ready(function () {
 </script>
 <!--@8.09.form-select+action-->
 
-<!--@8.11.search-field-->
+<!--@8.11.form-search-field-->
 <script type="text/javascript">
 $(document).ready(function() {
 	$('input[type=text], textarea').each(function(){
@@ -165,6 +165,16 @@ $(document).ready(function() {
 	});
 });
 </script>
-<!--@8.11.search-field-->
+<!--@8.11.form-search-field-->
+
+
+<!--@8.15.form-password-strength-->
+<script type="text/javascript" src="/js/modulos/jquery.password-strength.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#password').password_strength();
+});
+</script>
+<!--@8.15.form-password-strength-->
 
 

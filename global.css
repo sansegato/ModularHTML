@@ -832,6 +832,30 @@ input[type=submit]:disabled {
 /* Propriedades de CSS herdadas dos Módulos 8.13 e 8.1 */
 /*@8.14.form-login*/
 
+/*@8.15.form-password-strength*/
+.password_strength	{
+	padding-left:1%;
+	font-size:0.9em;
+}
+.password_strength_1,
+.password_strength_2	{
+	background-color:#FBE3E4; 
+	border: 1px solid #FBC2C4; 
+	color: #8A1F11;
+}
+.password_strength_3	{
+	background-color:#FFF6BF;
+	border: 1px solid #FFD324;
+	color: #514721;
+}
+.password_strength_4,
+.password_strength_5	{
+	background-color:#E6EFC2; 
+	border: 1px solid #C6D880; 
+	color: #264409; 
+}
+/*@8.15.form-password-strength*/
+
 /*@8.16.form-feedback-success*/
 .feedback	{
 	display:block;
