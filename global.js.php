@@ -31,7 +31,7 @@ $(document).ready(function(){
 <!--@2.05.tabs -->
 
 
-<!--@2.06.carousel -->
+<!--@2.06.navigation-carousel -->
 <script type="text/javascript" src="/js/modulos/jquery.elastislide.js"></script>
 <script type="text/javascript">	
 $('#carousel').elastislide({
@@ -40,7 +40,7 @@ $('#carousel').elastislide({
 	minItems	: 1
 });
 </script>
-<!--@2.06.carousel -->
+<!--@2.06.navigation-carousel -->
 
 
 <!--@2.07.accordion -->
@@ -147,7 +147,7 @@ $(document).ready(function () {
 </script>
 <!--@8.09.select+acao-->
 
-<!--@8.11.search-field -->
+<!--@8.11.form-search-field -->
 <script type="text/javascript">
 $(document).ready(function() {
 	$('input[type=text], textarea').each(function(){
@@ -166,6 +166,6 @@ $(document).ready(function() {
 	});
 });
 </script>
-<!--@8.11.search-field -->
+<!--@8.11.form-search-field -->
 
 
