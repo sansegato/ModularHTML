@@ -1,4 +1,4 @@
-<label for="name">
+<label for="example">
 	<span>Nome</span>
-	<input type="text" id="name" name="name" class="input-text" />
+	<input type="text" id="example" name="example" class="input-text" />
 </label>

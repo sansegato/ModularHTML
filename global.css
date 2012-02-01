@@ -257,7 +257,7 @@ Amarelo				#dfb417
 	
 /*@2.05.navigation-tabs*/
 
-/*@2.06.carousel*/
+/*@2.06.navigation-carousel*/
 #carousel {}
 .es-carousel-wrapper{
 	background: #c1dfda;
@@ -292,7 +292,7 @@ Amarelo				#dfb417
 	position:absolute;
 	top:50%;
 	left:12px;
-	background:transparent url(modulos/2.06.carousel/img/nav.png) no-repeat top left;
+	background:transparent url(modulos/2.06.navigation-carousel/img/nav.png) no-repeat top left;
 	width:14px;
 	height:26px;
 	margin-top:-13px;
@@ -308,7 +308,7 @@ Amarelo				#dfb417
 .es-nav span:hover{
 	opacity:1.0;
 }
-/*@2.06.carousel*/
+/*@2.06.navigation-carousel*/
 
 /* CORES */
 /*
@@ -798,6 +798,21 @@ input[type=submit]:disabled {
 	background-color:#f5f5f5;
 }
 /*@8.09.form-select+action*/
+
+/*@8.11.form-search-field*/
+.search	{
+	width:80%;
+	margin-right:5%;
+	float:left;
+}
+.search .input-text	{
+	padding-bottom:5px;
+	padding-top:5px;
+}
+#search-form .input-submit	{
+	width:15%;
+}
+/*@8.11.form-search-field*/
 
 /*@8.13.form-contact*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
