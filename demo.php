@@ -17,13 +17,16 @@
 	$dir = new DirectoryIterator( 'modulos' );
 	date_default_timezone_set('America/Sao_Paulo');	
 	
-	$css = file_get_contents('global.css');			
+	$css 		= file_get_contents('global.css');	
+	$js 		= file ('global.js.php');	
+	$jsConteudo = implode ('', file ('global.js.php'));
 	
 	foreach($dir as $file ){
 		if (!$file->isDot() && $file->isDir()){
 			$dname = $file->getFilename();
 			
-			$marcacao = "/*@".$dname."*/";		
+			$marcacaoCSS = "/*@".$dname."*/";		
+			$marcacaoJS = "<!--@".$dname."-->";		
 
 			print "<div class='modulo' id='$file'>";
 			print "<div class='visualizacao'>";
@@ -36,9 +39,14 @@
 			print "<ul class='abas'>";
 			print "<li class='aba-html'><a href='#'>Html</a></li>";
 			
+			//Adiciona aba o CSS se Existir
 			if(preg_match("/".$dname."/",$css)){
 				print "<li class='aba-css'><a href='#'>Css</a></li>";						
-			} else {}		
+			} else {}	
+			//Adiciona aba o JS se Existir
+			if(preg_match("/".$dname."/", $jsConteudo)){
+				print "<li class='aba-js'><a href='#'>JS</a></li>";						
+			} else {}	
 			
 			print "</ul>";		
 			print "<div class='html'>";			
@@ -46,15 +54,26 @@
 			include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
 			print "</pre>";	
 			print "</div>";	
-								
+			
+			//Adiciona o CSS se Existir	
 			if(preg_match("/".$dname."/",$css)){
-				$addCss = explode($marcacao, $css);
+				$addCss = explode($marcacaoCSS, $css);
 				print "<div class='css'>";
 				print "<pre class='brush: css;'>";
 				echo $addCss[1];
 				print "</pre>";
 				print "</div>";
-			} else {}				
+			} else {}	
+	
+			//Adiciona o JS se Existir
+			if(preg_match("/".$dname."/", $jsConteudo)){
+				$addJs = explode ($marcacaoJS, $jsConteudo);
+				print "<div class='js'>";
+				print "<pre class='brush: html;'>";
+				echo htmlspecialchars($addJs[1]);
+				print "</pre>";
+				print "</div>";
+			} else {}	
 			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
@@ -64,7 +83,7 @@
 				$abre = fopen ("modulos/$file/dependencias.txt", "r");
 				while (!feof ($abre)) {
 					$linha = fgets($abre, 4096);
-					echo '<a href="'.$linha.'">'.$linha."</a>";
+					echo '<a href="../js/modulos/'.$linha.'">'.$linha."</a>";
 				}
 				fclose ($abre);				
 			} else {}
@@ -101,6 +120,7 @@ $(document).ready(function() {
 	//	Abas	
 	$('.info div.html').show();		
 	$('.abas li:first-child a').addClass('active');	
+	$('.abas li:last-child a').css('border-right','1px solid #1B2426');	
 	$('.abas li a').click(function(){			
 		var anchor = $(this).parent('li').attr('class').slice(4,10);
 		if ( $(this).hasClass('active') ) {			
@@ -115,7 +135,7 @@ $(document).ready(function() {
 	});	
 	
 	//	Scroll abas
- 	$('.info .html, .info .css').each(function() {
+ 	$('.info .html, .info .css, .info .js').each(function() {
 		if($(this).height() > 300){
 			$(this).css('height','300px');
 			$(this).css('overflow-x','hidden');

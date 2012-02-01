@@ -56,11 +56,12 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 
 .modulo .info .abas		{ display:block; margin:0; padding:0; width:100%; float:left;}
 .modulo .info .abas li	{ display:block; margin:0; padding:0; float:left; }
-.modulo .info .abas li a{ display:block; margin:0; padding:5px 10px; color:#1B2426; background:#fff; float:left; font-size:11px; font-weight:bold; text-decoration:none; border:1px solid #1B2426; border-bottom:none;}
+.modulo .info .abas li a{ display:block; margin:0; padding:5px 10px; color:#1B2426; background:#fff; float:left; font-size:11px; font-weight:bold; text-decoration:none; border:1px solid #1B2426; border-bottom:none; border-right:none;}
 .modulo .info .abas li a.active{ color:#fff; background:#1B2426; }
 
 .modulo .info .html,
-.modulo .info .css{float:left; width:100%; display:none;}
+.modulo .info .css,
+.modulo .info .js{float:left; width:100%; display:none;}
 
 footer { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; }
 footer a:link, footer a:visited  { color: #666; }
@@ -257,7 +258,7 @@ Amarelo				#dfb417
 	
 /*@2.05.navigation-tabs*/
 
-/*@2.06.carousel*/
+/*@2.06.navigation-carousel*/
 .es-carousel-wrapper{
 	background: #c1dfda;
 	padding:10px 40px;
@@ -291,7 +292,7 @@ Amarelo				#dfb417
 	position:absolute;
 	top:50%;
 	left:12px;
-	background:transparent url(modulos/2.06.carousel/img/nav.png) no-repeat top left;
+	background:transparent url(modulos/2.06.navigation-carousel/img/nav.png) no-repeat top left;
 	width:14px;
 	height:26px;
 	margin-top:-13px;
@@ -307,21 +308,9 @@ Amarelo				#dfb417
 .es-nav span:hover{
 	opacity:1.0;
 }
-/*@2.06.carousel*/
-
-/* CORES */
-/*
-Verde bem claro		#c1dfda
-Verde claro			#82bfb5
-Verde médio			#449f91
-Verde escuro		#067f6c
-Verde bem escuro	#033f36
-Amarelo				#dfb417
-*/
-
+/*@2.06.navigation-carousel*/
 
 /*@2.07.navigation-accordion*/
-
 .accordion-item	{}
 .accordion-title a,
 .accordion-content	{
@@ -799,7 +788,7 @@ input[type=submit]:disabled {
 }
 /*@8.09.form-select+action*/
 
-/*@8.11.search-field*/
+/*@8.11.form-search-field*/
 .search	{
 	width:80%;
 	margin-right:5%;
@@ -812,7 +801,7 @@ input[type=submit]:disabled {
 #search-form .input-submit	{
 	width:15%;
 }
-/*@8.11.search-field*/
+/*@8.11.form-search-field*/
 
 /*@8.13.form-contact*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
