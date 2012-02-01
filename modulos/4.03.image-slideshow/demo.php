@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-	<title>Slideshow</title>
+	<title>image-slideshow</title>
 	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	<div id="main" style="max-width:1120px;">
+	<div id="main" style="max-width:650px;">
 		<?php include ('index.php'); ?>
 	</div>
 	<?php include('../../global.js.php'); ?>

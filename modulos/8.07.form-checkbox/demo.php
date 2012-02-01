@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-	<title>Checkbox</title>
+	<title>form-checkbox</title>
 	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
