@@ -1,2 +1,2 @@
-http://www.jquery.com
-http://sharrre.com
+jquery-1.7.1.js
+jquery.sharrre-1.2.0.min.js

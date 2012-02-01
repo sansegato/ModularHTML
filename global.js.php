@@ -1,7 +1,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
-<!--@2.05.abas -->
+<!--@2.05.abas-->
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -28,10 +28,10 @@ $(document).ready(function(){
 	
 })
 </script>
-<!--@2.05.tabs -->
+<!--@2.05.tabs-->
 
 
-<!--@2.06.carousel -->
+<!--@2.06.carousel-->
 <script type="text/javascript" src="/js/modulos/jquery.elastislide.js"></script>
 <script type="text/javascript">	
 $('#carousel').elastislide({
@@ -40,10 +40,10 @@ $('#carousel').elastislide({
 	minItems	: 1
 });
 </script>
-<!--@2.06.carousel -->
+<!--@2.06.carousel-->
 
 
-<!--@2.07.accordion -->
+<!--@2.07.accordion-->
 <script type="text/javascript">
 $(document).ready(function() {
 	var firstAccordion = $('.accordion-item:first-child');
@@ -67,10 +67,10 @@ $(document).ready(function() {
 	});
 });
 </script>
-<!--@2.07.accordion -->
+<!--@2.07.accordion-->
 
 
-<!--@2.08.navigation-tag-cloud -->
+<!--@2.08.navigation-tag-cloud-->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/modulos/excanvas.js"></script><![endif]-->
 <script src="/js/modulos/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -89,20 +89,20 @@ $(document).ready(function() {
 	}
 });
 </script>
-<!--@2.08.navigation-tag-cloud -->
+<!--@2.08.navigation-tag-cloud-->
 
 
-<!--@4.03.slideshow -->
+<!--@4.03.slideshow-->
 <script type="text/javascript" src="/js/modulos/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
 	$('.slideshow').flexslider();
 });
 </script>
-<!--@4.03.slideshow -->
+<!--@4.03.slideshow-->
 	
 	
-<!--@5.02.social-networks-share -->
+<!--@5.02.social-networks-share-->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -129,7 +129,7 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.02.social-networks-share -->
+<!--@5.02.social-networks-share-->
 
 <!--@8.09.select+acao-->
 <script type="text/javascript">
@@ -147,7 +147,7 @@ $(document).ready(function () {
 </script>
 <!--@8.09.select+acao-->
 
-<!--@8.11.search-field -->
+<!--@8.11.search-field-->
 <script type="text/javascript">
 $(document).ready(function() {
 	$('input[type=text], textarea').each(function(){
@@ -166,6 +166,6 @@ $(document).ready(function() {
 	});
 });
 </script>
-<!--@8.11.search-field -->
+<!--@8.11.search-field-->
 
 
