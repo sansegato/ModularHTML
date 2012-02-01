@@ -4,9 +4,9 @@
 			<span>Usuário</span>
 			<input type="text" id="user" class="input-text" />
 		</label>
-		<label for="password">
+		<label for="user-password">
 			<span>Senha</span>
-			<input type="password" id="password" class="input-text" />
+			<input type="password" id="user-password" class="input-text" />
 		</label>
 		<label for="remember">
 			<input type="checkbox" class="input-checkbox" id="remember" value="remember" name="remember" />Lembrar senha
