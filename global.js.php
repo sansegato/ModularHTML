@@ -139,9 +139,9 @@ $('#shareme').sharrre({
 	linkedin: true
 	},
 	buttons: {
-	googlePlus: {size: 'tall'},
-	facebook: {layout: 'box_count'},
-	twitter: {count: 'vertical'},
+	googlePlus: {size: 'tall', lang: 'pt-BR'},
+	facebook: {layout: 'box_count', lang: 'pt_BR'},
+	twitter: {count: 'vertical', lang:'pt_br'},
 	digg: {type: 'DiggMedium'},
 	delicious: {size: 'tall'},
 	stumbleupon: {layout: '5'},

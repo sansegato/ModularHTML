@@ -545,6 +545,9 @@ html[xmlns] .slides {
 	float:left;
 	width:60px;
 }
+.social-networks-share .sharrre .button.twitter{
+	width:75px;
+}
 /*@5.02.widget-social-networks-share*/
 
 /*@5.06.widget-social-networks*/
