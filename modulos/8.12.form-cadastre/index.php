@@ -4,9 +4,9 @@
 			<span>E-mail</span>
 			<input type="text" id="email" class="input-text" />
 		</label>
-		<label for="password">
+		<label for="cadastre-password">
 			<span>Senha</span>
-			<input type="password"	id="password" class="input-text" >
+			<input type="password"	id="cadastre-password" class="input-text" >
 		</label>	
 		<label for="firstname">
 			<span>Nome</span>

@@ -3,6 +3,7 @@
 		<label for="password">
 			<span>Senha</span>
 			<input type="password" id="password" class="input-text" />
+		</label>
 		<label for="submit">
 			<input id="submit" type="submit" value="Enviar" name="Submit" class="input-submit" />
 		</label>

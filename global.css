@@ -744,6 +744,7 @@ ul.list-articles .subtitle	{
 /* -----------------------------------*/
 /* ------->>> Formulário <<<----------*/
 /* -----------------------------------*/
+
 /*@8.01.form-label*/
 label {
 	display:block;
@@ -800,9 +801,10 @@ label span {
 .select-form {
 	border:solid 1px #c1dfda;
 	color:#999999;
+	padding:2px;
 }
 .select-form:focus {
-	border:solid 1px #82bfb5;
+	border:solid 1px #82bfb5;	
 }
 /*@8.06.form-select*/
 
@@ -832,53 +834,102 @@ input[type=submit]:disabled {
 /*@8.09.form-select+action*/
 
 /*@8.11.form-search-field*/
-.search	{
-	width:80%;
-	margin-right:5%;
-	float:left;
-}
-.search .input-text	{
-	padding-bottom:5px;
-	padding-top:5px;
-}
-#search-form .input-submit	{
-	width:15%;
-}
+/* Utilizar o mesmo css do módulo: 8.12 */
 /*@8.11.form-search-field*/
 
+/*@8.12.form-cadastre*/
+form{
+	display:block; 
+	padding:2%; 
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+}
+form label{
+	display:block;
+	margin: 0 0 20px 0;
+}
+form label[for=buscar],
+form label[for=submit]{margin:0;}
+
+form label span{
+	display:block;
+	font-size:12px; 
+	font-weight:bold; 
+	color:#666;
+}
+form label input[type=text],
+form label input[type=password],
+form label textarea{
+	display:block;
+	width:97.9%;
+	padding:8px 1%;
+	border:1px solid #ccc;
+	font-size:12px;
+	color:#333;
+}
+form label input[type=checkbox],
+form label input[type=radio]{
+	margin:0 5px 0 0;
+}
+
+form label input[type=text]:hover, 		
+form label input[type=text]:focus,
+form label input[type=password]:hover, 	
+form label input[type=password]:focus,
+form label textarea:hover, 				
+form label textarea:focus{
+	border:1px solid #bbb;
+	background:#f9f9f9;
+}
+form label input[type=submit]{
+	width:10%;
+	padding:8px;
+	border:1px solid #bbb;
+	background:#ccc;
+	font-size:12px; 
+	text-transform:uppercase;
+	color:#666;
+	font-weight:bold;
+}
+form label input[type=submit]:hover{
+	border:1px solid #999;
+	background:#666;
+	color:#ccc;
+}
+form .password_strength	{
+	padding-left:1%;
+	font-size:0.9em;
+}
+form .password_strength_1,
+form .password_strength_2	{
+	background-color:#FBE3E4; 
+	border: 1px solid #FBC2C4; 
+	color: #8A1F11;
+}
+form .password_strength_3	{
+	background-color:#FFF6BF;
+	border: 1px solid #FFD324;
+	color: #514721;
+}
+form .password_strength_4,
+form .password_strength_5	{
+	background-color:#E6EFC2; 
+	border: 1px solid #C6D880; 
+	color: #264409; 
+}
+
 
 /*@8.12.form-cadastre*/
-.cadastre-form {
-	width:96%;
-	background-color: #F5F5F5;
-	border: 1px solid #CCCCCC;
-	padding:5px 2%;
-}
-.cadastre-form input[type=text], 
-.cadastre-form input[type=password], 
-.cadastre-form textarea {
-	width:99.9%;
-}
-/*@8.12.form-cadastre*/
-
 
 /*@8.13.form-contact*/
-/* Algumas propriedades dos inputs são herdadas dos módulos acima */
-.contact-form {
-	width:96%;
-	background-color: #F5F5F5;
-	border: 1px solid #CCCCCC;
-	padding:5px 2%;
-}
-.contact-form input[type=text], 
-.contact-form input[type=password], 
-.contact-form textarea {
-	width:99.9%;
-}
-.ddd	{ 
-	float:left;
-	width:15%;
-	margin-right:5%;
+/* Utilizar o mesmo css do módulo: 8.12 + */
+.ddd{ 
+	float:left;	
+	margin-right:2%;
+	width:18%;
 }
 
 .phone	{  
@@ -887,32 +938,13 @@ input[type=submit]:disabled {
 }
 /*@8.13.form-contact*/
 
-/*@8.14.form-login/
-/* Propriedades de CSS herdadas dos Módulos 8.13 e 8.1 */
+
+/*@8.14.form-login*/
+/* Utilizar o mesmo css do módulo: 8.12 */
 /*@8.14.form-login*/
 
 /*@8.15.form-password-strength*/
-.password_strength	{
-	padding-left:1%;
-	font-size:0.9em;
-}
-.password_strength_1,
-.password_strength_2	{
-	background-color:#FBE3E4; 
-	border: 1px solid #FBC2C4; 
-	color: #8A1F11;
-}
-.password_strength_3	{
-	background-color:#FFF6BF;
-	border: 1px solid #FFD324;
-	color: #514721;
-}
-.password_strength_4,
-.password_strength_5	{
-	background-color:#E6EFC2; 
-	border: 1px solid #C6D880; 
-	color: #264409; 
-}
+/* Utilizar o mesmo css do módulo: 8.12 */
 /*@8.15.form-password-strength*/
 
 /*@8.16.form-feedback-success*/
@@ -985,6 +1017,20 @@ button[type=submit]:hover	{
 	color:#fff;
 }
 /*@8.20.form-button*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

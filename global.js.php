@@ -191,6 +191,14 @@ $(document).ready(function() {
 </script>
 <!--@8.11.form-search-field-->
 
+<!--@8.12.form-cadastre-->
+<script type="text/javascript" src="/js/modulos/jquery.password-strength.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#cadastre-password').password_strength();
+});
+</script>
+<!--@8.12.form-cadastre-->
 
 <!--@8.15.form-password-strength-->
 <script type="text/javascript" src="/js/modulos/jquery.password-strength.js"></script>
