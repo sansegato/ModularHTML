@@ -2,7 +2,10 @@
 <head>
 <meta charset="iso-8859-1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>ModularHTML</title>	
+<title>ModularHTML</title>
+<!-- css contrast -->
+<link rel="stylesheet" media="all" href="/js/modulos/contrast-normal.css" title="normal" />
+<link rel="alternate stylesheet" media="all" href="/js/modulos/contrast.css" title="contraste" />
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>

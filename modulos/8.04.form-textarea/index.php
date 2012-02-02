@@ -1,1 +1,1 @@
-<textarea id="message" name="message" class="input-textarea"></textarea> 
+<textarea id="example-message" name="example-message" class="input-textarea"></textarea> 

@@ -1,0 +1,26 @@
+html {
+	background: #000 !important;
+}
+
+body, #container, #superior {
+	background-image: none !important;
+	background-color: #000 !important;
+}
+
+#page {
+	background-color: #000 !important;
+}
+
+h1{font-family: 'AllerBold'; }
+h2{color: #fff !important;}
+h3{color: #fff !important;}
+h4{color: #fff !important;}
+h2 a,
+h3 a { color:#fff!important; }
+
+p{font-size:12px; line-height:20px; color:#fff;}
+a{text-decoration:none; color: #0E6285}
+a:hover{text-decoration:underline;}
+
+header section#logo h1 a{color:#EEE !important;  }
+header section#logo h1 a span{color:#FFF !important; }

@@ -602,6 +602,20 @@ html[xmlns] .slides {
 }
 /*@5.04.print*/
 
+/*@5.05.contrast*/
+.contrast	{
+	background:url(modulos/5.05.contrast/img/sprite-tools.png) no-repeat -79px 0;
+	display:block;
+	width:20px;
+	height:20px;
+	outline:none;
+	text-indent:-9999px;
+}
+.contrast:hover	{
+	background-position:-79px -20px;
+}
+/*@5.05.contrast*/
+
 /*@5.06.widget-social-networks*/
 #social-networks {
 	height:55px;

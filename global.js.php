@@ -187,15 +187,31 @@ $(document).ready(function() {
 </script>
 <!--@5.04.print-->
 
+
+<!--@5.05.contrast-->
+<script src="/js/modulos/styleswitcher.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.contrast').click(function() {
+		if ( getActiveStyleSheet() == 'normal' )
+			setActiveStyleSheet('contraste');
+		else 
+			setActiveStyleSheet('normal');
+		return false;
+	});
+});
+</script>
+<!--@5.05.contrast-->
+
 <!--@8.09.form-select-action-->
 <script type="text/javascript">
 $(document).ready(function () {
-	$('select option').click(function() {
-		var valor = $('select option:selected').val();
+	$('#select-action option').click(function() {
+		var valor = $('#select-action option:selected').val();
 		if ( valor =="" ) {
-			$('#submit').attr('disabled', 'disabled');
+			$('#select-submit').attr('disabled', 'disabled');
 		} else {
-			$('#submit').removeAttr('disabled');
+			$('#select-submit').removeAttr('disabled');
 		}
 	});
 	
