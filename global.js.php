@@ -154,21 +154,54 @@ $('#shareme').sharrre({
 </script>
 <!--@5.02.social-networks-share-->
 
-<!--@8.09.form-select+action-->
+
+<!--@5.03.control-font-size-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.resizeText').click(function(){
+		var ourText = $('p');
+		var currFontSize = ourText.css('fontSize');
+		var finalNum = parseFloat(currFontSize, 16);
+		var stringEnding = currFontSize.slice(-2);
+		if(this.id == 'increase') {
+			finalNum *= 1.2;
+		}
+		else if (this.id == 'decrease'){
+			finalNum /=1.2;
+		}
+		ourText.css('fontSize', finalNum + stringEnding);
+		return false;
+	});	
+});
+</script>
+<!--@5.03.control-font-size-->
+
+<!--@5.04.print-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#print").click(function(){
+		window.print();
+		return false;
+	});
+});
+</script>
+<!--@5.04.print-->
+
+<!--@8.09.form-select-action-->
 <script type="text/javascript">
 $(document).ready(function () {
 	$('select option').click(function() {
 		var valor = $('select option:selected').val();
 		if ( valor =="" ) {
-			$('#enviar').attr('disabled', 'disabled');
+			$('#submit').attr('disabled', 'disabled');
 		} else {
-			$('#enviar').removeAttr('disabled');
+			$('#submit').removeAttr('disabled');
 		}
 	});
 	
 });
 </script>
-<!--@8.09.form-select+action-->
+<!--@8.09.form-select-action-->
 
 <!--@8.11.form-search-field-->
 <script type="text/javascript">
