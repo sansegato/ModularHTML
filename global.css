@@ -336,14 +336,23 @@ Amarelo				#dfb417
 }
 /*@2.07.navigation-accordion*/
 
+/* CORES */
+/*
+Verde bem claro		#c1dfda
+Verde claro			#82bfb5
+Verde médio			#449f91
+Verde escuro		#067f6c
+Verde bem escuro	#033f36
+Amarelo				#dfb417
+*/
 
 /*@2.09.navigation-glossary*/
 #glossary .ln-letters {overflow: hidden;}
 #glossary .ln-letters a {
-    background:#f5f5f5;
-    border:1px solid #CCC;
+    background:#82bfb5;
+    border:1px solid #449f91;
     border-right:none;
-    color: #666;
+    color: #067f6c;
     display: block;
     float: left;
     font-size: 12px;
@@ -352,11 +361,11 @@ Amarelo				#dfb417
     text-decoration: none;
 	font-weight:bold;
 }
-#glossary .ln-letters a.ln-last{border-right:1px solid #ccc;}
+#glossary .ln-letters a.ln-last{border-right:1px solid #449f91;}
 
-#glossary .ln-letters a.ln-disabled {color: #ddd;}
+#glossary .ln-letters a.ln-disabled {color: #82bfb5; background:#c1dfda;}
 #glossary .ln-letters a:hover, 
-#glossary .ln-letters a.ln-selected {background: #666; color:#FFF;}
+#glossary .ln-letters a.ln-selected {background: #449f91; color:#FFF;}
 
 #glossary .ln-letter-count {
     color: #E7E5B7;
@@ -546,6 +555,49 @@ html[xmlns] .slides {
 	width:60px;
 }
 /*@5.02.widget-social-networks-share*/
+
+/*@5.03.control-font-size*/
+.font-size	{
+	overflow:hidden;
+} 
+.font-size a	{
+	background:url(modulos/5.03.control-font-size/img/sprite-tools.png) no-repeat;
+	display:block;
+	width:20px;
+	height:20px;
+	float:left;
+	text-indent:-9999px;
+	outline:none;
+}
+#increase	{
+	background-position:-27px 0;
+}
+#increase:hover	{
+	background-position:-27px -20px;
+}
+#decrease	{
+	background-position:-54px 0;
+}
+#decrease:hover	{
+	background-position:-54px -20px;
+}
+/*@5.03.control-font-size*/
+
+/*@5.04.print*/
+.print-text	{
+	overflow:hidden;
+}
+#print	{
+	background:url(modulos/5.04.print/img/sprite-tools.png) no-repeat -1px 0;
+	display:block;
+	height:20px;
+	width:20px;
+	text-indent:-9999px;
+}
+#print:hover	{
+	background-position:-1px -20px;
+}
+/*@5.04.print*/
 
 /*@5.06.widget-social-networks*/
 #social-networks {
@@ -820,13 +872,13 @@ label span {
 }
 /*@8.08.form-radio*/
 
-/*@8.09.form-select+action*/
+/*@8.09.form-select-action*/
 input[type=submit]:disabled {
 	border:solid 1px #e5e5e5;
 	color:#e5e5e5;
 	background-color:#f5f5f5;
 }
-/*@8.09.form-select+action*/
+/*@8.09.form-select-action*/
 
 /*@8.11.form-search-field*/
 .search	{
