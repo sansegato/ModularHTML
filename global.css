@@ -554,6 +554,9 @@ html[xmlns] .slides {
 	float:left;
 	width:60px;
 }
+.social-networks-share .sharrre .button.twitter{
+	width:75px;
+}
 /*@5.02.widget-social-networks-share*/
 
 /*@5.03.control-font-size*/
@@ -894,6 +897,22 @@ input[type=submit]:disabled {
 	width:15%;
 }
 /*@8.11.form-search-field*/
+
+
+/*@8.12.form-cadastre*/
+.cadastre-form {
+	width:96%;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+	padding:5px 2%;
+}
+.cadastre-form input[type=text], 
+.cadastre-form input[type=password], 
+.cadastre-form textarea {
+	width:99.9%;
+}
+/*@8.12.form-cadastre*/
+
 
 /*@8.13.form-contact*/
 /* Algumas propriedades dos inputs são herdadas dos módulos acima */
