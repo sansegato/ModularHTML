@@ -18,7 +18,7 @@ body {
 	border-color: rgba(0, 0, 0, 0.13);
 }
 
-h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; margin:0; }
+h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 3% 0; margin:0; }
 .nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.5em; }
 .nome-modulo a		{ text-decoration:none; color:#449f91; }
 .nome-modulo a:hover{ color:#fff; background-color:#449f91; padding-left:1em; padding-right:1em; }
@@ -35,6 +35,8 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 1% 0; ma
 #intro div.social-networks-share	{ float: left; width: 100%; margin: 15% 0 0; text-align: center; }
 #intro div.social-networks-share #shareme { display: inline-block; }
 #intro .twitter { line-height: 2.1 ;}
+
+#menu { width: 90%; background: red; position: fixed; font-size: 0.8em; line-height: 1.4; }
 
 .modulo 					{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.first				{ border-top: dotted 2px #ddd; }

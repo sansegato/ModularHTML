@@ -16,6 +16,29 @@
 
 <span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
 
+<div id="menu">
+
+<select id="shortcuts" class="select-form">
+	<?php
+		$dir = new DirectoryIterator( 'modulos' );
+		date_default_timezone_set('America/Sao_Paulo');	
+		
+		foreach($dir as $file ){
+			if (!$file->isDot() && $file->isDir()){
+				$dname = $file->getFilename();	
+				print "<option value=''>$file</option>";
+						
+			}
+		}	
+		foreach($dir as $file ){
+			if (!$file->isDot() && $file->isFile()){
+			}
+		}   
+	?>
+</select> 
+
+</div>
+
 <?php
 	$dir = new DirectoryIterator( 'modulos' );
 	date_default_timezone_set('America/Sao_Paulo');	
