@@ -15,7 +15,9 @@
 </head>
 <body>
 	<div id="main">
-		<?php include ('index.php'); ?>
+		<div class="visualizacao">
+			<?php include ('index.php'); ?>
+		</div>
 	</div>
 	<?php include('../../global.js.php'); ?>
 </body>

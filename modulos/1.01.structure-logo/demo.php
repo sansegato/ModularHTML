@@ -16,6 +16,5 @@
 <div id="main">
 	<?php include ('index.php'); ?>
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 </body>
 </html>
