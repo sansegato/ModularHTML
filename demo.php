@@ -26,7 +26,7 @@
 		foreach($dir as $file ){
 			if (!$file->isDot() && $file->isDir()){
 				$dname = $file->getFilename();	
-				print "<option value=''>$file</option>";
+				print "<option value='#$file'>$file</option>";
 						
 			}
 		}	
@@ -166,10 +166,52 @@ $(document).ready(function() {
 			$(this).css('height','300px');
 			$(this).css('overflow-x','hidden');
 		}		
-	});	
+	});
+	
+	// Linking combo box
+	$("#shortcuts").change(function() {
+			document.location = this.value;
+	});
+	
+	// Get the #menu to "fix" on window-scroll.
+	var message = $( "#menu" );
+	var originalMessageTop = message.offset().top;
+	var view = $( window );
+
+	view.bind(
+		"scroll resize",
+		function(){
+
+			var viewTop = view.scrollTop();
+
+			if (
+				(viewTop > originalMessageTop) &&
+				!message.is( ".nav-fixed" )
+				){
+
+				message
+					.removeClass( "nav-absolute" )
+					.addClass( "nav-fixed" )
+				;
+
+			} else if (
+				(viewTop <= originalMessageTop) &&
+				message.is( ".nav-fixed" )
+				){
+
+				message
+					.removeClass( "nav-fixed" )
+					.addClass( "nav-absolute" )
+				;
+
+			}
+		}
+	);		
 	
 });
 </script>
+
+
 <script type="text/javascript" src="js/jquery.fn.sortelements.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -199,6 +241,7 @@ $(document).ready(function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
   })();
 </script>
+
 
 </body>
 </html>
