@@ -545,6 +545,123 @@ html[xmlns] .slides {
 /* ---------->>> Widget <<<-----------*/
 /* -----------------------------------*/
 
+/*@5.01.tweets*/
+.jta-tweet-list .jta-tweet-profile-image{
+	float:left;
+	margin:0 10px 0 0;
+	
+}
+.jta-tweet-list{
+	display:block;
+	margin: 0 0 20px 0;
+	padding:0;
+}
+.jta-tweet-list .jta-tweet-list-item{
+	display:block;
+	margin: 0 0 5px 0;
+	padding:0 0 5px 0;
+	border-bottom:1px dotted #ccc;
+}
+.jta-tweet-body{
+	font-size:12px;
+	color:#333;
+	margin: 0 0 0 60px;
+}
+.jta-tweet-user-name{display:block;}
+
+.jta-tweet-user-screen-name{
+	font-weight:bold;
+	font-size:14px;
+}
+.jta-tweet-user-screen-name a{text-decoration:none; color:#0068a6;}
+
+.jta-tweet-user-full-name{
+	font-size:11px;	
+}
+.jta-tweet-user-full-name a{
+	color:#666;
+	text-decoration:none;
+}
+.jta-tweet-attributes{display:block;}
+
+.jta-tweet-attributes, .jta-tweet-actions {
+    color: #999999;
+    display: block;
+    font-size: 11px;
+    margin-top: 3px;
+}
+.jta-tweet-twitter-bird-icon {
+    background-color: transparent;
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/bird/bird_gray/bird_16_gray.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    width: 19px;
+}
+.jta-tweet-twitter-bird-icon:hover {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/bird/bird_black/bird_16_black.png");
+}
+.jta-tweet-timestamp a{
+	text-decoration:none;
+	color:#666;
+}
+.jta-tweet-timestamp-link:hover, 
+.jta-tweet-source-link a:hover, 
+.jta-tweet-inreplyto-link:hover, 
+.jta-tweet-location-link:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+.jta-tweet-action-reply, 
+.jta-tweet-action-retweet, 
+.jta-tweet-action-favorite {
+    padding-right: 1em;
+}
+.jta-tweet-action-reply a, 
+.jta-tweet-action-retweet a, 
+.jta-tweet-action-favorite a {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #999999;
+    padding-left: 19px;
+    padding-top: 3px;
+    text-decoration: none;
+}
+.jta-tweet-action-reply a {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/reply.png");
+}
+.jta-tweet-action-retweet a {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/retweet.png");
+}
+.jta-tweet-action-favorite a {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/favorite.png");
+}
+.jta-tweet-action-reply a:hover, 
+.jta-tweet-action-retweet a:hover, 
+.jta-tweet-action-favorite a:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+.jta-tweet-action-reply a:hover {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/reply_hover.png");
+}
+.jta-tweet-action-retweet a:hover {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/retweet_hover.png");
+}
+.jta-tweet-action-favorite a:hover {
+    background-image: url("http://si0.twimg.com/images/dev/cms/intents/icons/favorite_hover.png");
+}
+.jta-clear{
+	clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+/*@5.01.tweets*/
+
 /*@5.02.widget-social-networks-share*/
 .social-networks-share	{
 	float:left; 
