@@ -204,6 +204,16 @@ $(document).ready(function() {
 <!--@5.05.contrast-->
 
 
+<!--@5.08.audio-player-->
+<script type="text/javascript" src="/js/modulos/mediaelement-and-player.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('audio,video').mediaelementplayer();
+});
+</script>
+<!--@5.08.audio-player-->
+
+
 <!--@5.10.avaliation-->
 <script type="text/javascript" src="/js/modulos/jquery.raty.js"></script>
 <script type="text/javascript">
