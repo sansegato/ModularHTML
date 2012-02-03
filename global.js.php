@@ -29,7 +29,6 @@ $(document).ready(function(){
 </script>
 <!--@2.05.navigation-tabs-->
 
-
 <!--@2.06.navigation-carousel-->
 <script type="text/javascript" src="/js/modulos/jquery.elastislide.js"></script>
 <script type="text/javascript">	
@@ -124,6 +123,27 @@ $(window).load(function() {
 </script>
 <!--@4.03.image-slideshow-->
 	
+<!--@5.01.tweets-->
+<script type="text/javascript" src="/js/modulos/jquery.jtweetsanywhere-1.3.1.min.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=kxArpQ1JRyYdGOKosZsrow&v=1"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#tweetFeed').jTweetsAnywhere({
+			username: 'a2comunicacao',
+			count: 3,
+			showTweetFeed: {
+				showProfileImages: true,
+				showUserScreenNames: true,
+				showUserFullNames: true,
+				showActionReply: true,
+				showActionRetweet: true,
+				showActionFavorite: true
+			},
+			showTweetBox: false
+		});
+	});
+</script>
+<!--@5.01.tweets-->
 	
 <!--@5.02.social-networks-share-->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
