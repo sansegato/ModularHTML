@@ -203,6 +203,19 @@ $(document).ready(function() {
 </script>
 <!--@5.05.contrast-->
 
+
+<!--@5.10.avaliation-->
+<script type="text/javascript" src="/js/modulos/jquery.raty.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#rating').raty({
+		cancel:     true,
+		path:		'/modulos/5.10.avaliation/img/'
+	});
+});
+</script>
+<!--@5.10.avaliation-->
+
 <!--@8.09.form-select-action-->
 <script type="text/javascript">
 $(document).ready(function () {
