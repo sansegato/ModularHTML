@@ -225,26 +225,27 @@ $(document).ready(function() {
 
 
 <!--@5.08.audio-player-->
-<script type="text/javascript" src="/js/modulos/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="/js/modulos/mediaelement-and-player.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-	$('audio,video').mediaelementplayer();
+	$('.visualizacao audio').mediaelementplayer();
+	//Não utilizar o seletor '.visualizacao', nesse exemplo ele foi usado apenas para renderizar o HTML original.
 });
 </script>
 <!--@5.08.audio-player-->
 
 
-<!--@5.10.avaliation-->
+<!--@5.10.rating-->
 <script type="text/javascript" src="/js/modulos/jquery.raty.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$('#rating').raty({
 		cancel:     true,
-		path:		'/modulos/5.10.avaliation/img/'
+		path:		'/modulos/5.10.rating/img/'
 	});
 });
 </script>
-<!--@5.10.avaliation-->
+<!--@5.10.rating-->
 
 <!--@8.09.form-select-action-->
 <script type="text/javascript">
