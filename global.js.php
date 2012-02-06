@@ -225,11 +225,10 @@ $(document).ready(function() {
 
 
 <!--@5.08.audio-player-->
-<script type="text/javascript" src="/js/modulos/mediaelement-and-player.js"></script>
+<script type="text/javascript" src="/js/modulos/mediaelement-and-player.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-	$('.visualizacao audio').mediaelementplayer();
-	//Não utilizar o seletor '.visualizacao', nesse exemplo ele foi usado apenas para renderizar o HTML original.
+	$('audio').mediaelementplayer();
 });
 </script>
 <!--@5.08.audio-player-->
