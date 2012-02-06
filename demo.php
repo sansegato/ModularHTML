@@ -166,14 +166,6 @@ $(document).ready(function() {
 		}		
 	});	
 	
-	//	Scroll abas
- 	$('.info .html, .info .css, .info .js').each(function() {
-		if($(this).height() > 300){
-			$(this).css('height','300px');
-			$(this).css('overflow-x','hidden');
-		}		
-	});
-	
 	$('body div.modulo').sortElements(function(a, b){
 		return $(a).text() > $(b).text() ? 1 : -1;
 	});

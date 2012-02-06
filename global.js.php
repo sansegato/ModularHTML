@@ -224,14 +224,39 @@ $(document).ready(function() {
 <!--@5.05.contrast-->
 
 
-<!--@5.08.audio-player-->
+<!--@5.08.01.audio-player-->
+<script src="/js/modulos/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+			ready: function () {
+				$(this).jPlayer("setMedia", {
+					m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+					oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+				});
+			},
+			play: function() { // To avoid both jPlayers playing together.
+				$(this).jPlayer("pauseOthers");
+			},
+			swfPath: "http://www.jplayer.org/2.0.0/js/",
+			supplied: "m4a, oga",
+			cssSelectorAncestor: "#jp_container_1",
+			wmode: "window"
+		});
+});
+</script>
+<!--@5.08.01.audio-player-->
+
+
+<!--@5.08.02.audio-player-->
 <script type="text/javascript" src="/js/modulos/mediaelement-and-player.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
 	$('audio').mediaelementplayer();
 });
 </script>
-<!--@5.08.audio-player-->
+<!--@5.08.02.audio-player-->
 
 
 <!--@5.10.rating-->
