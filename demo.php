@@ -39,7 +39,6 @@
 
 </div>
 
-<div id="modulos">
 <?php
 	$dir = new DirectoryIterator( 'modulos' );
 	date_default_timezone_set('America/Sao_Paulo');	
@@ -78,7 +77,7 @@
 			print "</ul>";		
 			print "<div class='html'>";			
 			print "<pre class='brush: html;'>";
-			//include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
+			include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
 			print "</pre>";	
 			print "</div>";	
 			
@@ -127,7 +126,6 @@
 		}
 	}   
 ?>
-</div>
 <?php include ('footer.php'); ?>
 <?php include ('global.js.php'); ?>
 <!-- scripts -->
@@ -135,13 +133,6 @@
 <script type="text/javascript" src="js/jquery.fn.sortelements.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	
-	//codigo HTML
-	$('#modulos').children('.modulo').each(function() {
-		var pasta = "modulos/";
-		var numero = $(this).attr('id');
-		$(this).children('.info').children('.html').children('pre').load(pasta + numero);
-	});
 
 	//	navegação
 	$('.modulo').jknavigable();
@@ -170,12 +161,16 @@ $(document).ready(function() {
 		return $(a).text() > $(b).text() ? 1 : -1;
 	});
 	
+	$('#shortcuts option').sortElements(function(a, b){
+		return $(a).text() > $(b).text() ? 1 : -1;
+	});
+	
 	// Linking combo box
 	$("#shortcuts").change(function() {
 		//document.location = this.value;
 		var link = $("#shortcuts option:selected").val();
 		var nome = link.substr(1, link.length);
-		$('#modulos').children('.modulo').each(function() {
+		$('.modulo').each(function() {
 			if ( $(this).attr('id') == nome ) {
 				var altura = $(this).offset().top;
 				var deslocamentoInicial = altura -50;

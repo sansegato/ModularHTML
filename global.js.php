@@ -253,7 +253,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/js/modulos/mediaelement-and-player.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-	$('audio').mediaelementplayer();
+	$('.visualizacao audio').mediaelementplayer();
 });
 </script>
 <!--@5.08.02.audio-player-->
