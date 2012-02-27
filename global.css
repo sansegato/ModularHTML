@@ -51,9 +51,12 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 3% 0; ma
 .modulo .info p.link		{ background:url(img/modulo.png) no-repeat scroll left center; }
 .modulo .info p.data		{ background:url(img/relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
 .modulo .info p.data span	{ font-size:12px; font-weight:bold; color:#666; }
-.modulo .info p.dependencias{ background:url(img/dependencias.png) no-repeat scroll left center; font-size:11px; font-weight:bold; }
-.modulo .info p.dependencias a{color:#067f6c; margin:0 5px 0 0;}
-.modulo .info p.dependencias a:hover{color:#FFF;}
+.modulo .info p.dependencias{ background:url(img/dependencias.png) no-repeat scroll 2px center; font-size:11px; font-weight:bold; }
+.modulo .info p.dependencias a,
+.modulo .info p.imagens a	{color:#067f6c; margin:0 5px 0 0;}
+.modulo .info p.dependencias a:hover,
+.modulo .info p.imagens a:hover{color:#FFF;}
+.modulo .info p.imagens{ background:url(img/imagem.gif) no-repeat scroll 4px center; font-size:11px; font-weight:bold; }
 
 .modulo .info textarea		{ width: 95%; font-size:90%; font-family: Cambria, Georgia, serif; }
 

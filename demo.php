@@ -104,27 +104,22 @@
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
 			
-			print "<p class='dependencias'>";
 			if (file_exists("modulos/$file/dependencias.txt")) {
 				$abre = fopen ("modulos/$file/dependencias.txt", "r");
 				while (!feof ($abre)) {
 					$linha = fgets($abre, 4096);
+					print "<p class='dependencias'>";
 					echo '<a href="../js/modulos/'.$linha.'">'.$linha."</a>";
+					print "</p>";
 				}
 				fclose ($abre);				
 			} else {}
-			
-			print "</p>";
 			
 			print "</div>";
 			print "</div>";			
 			
 		}
 	}	
-	foreach($dir as $file ){
-		if (!$file->isDot() && $file->isFile()){
-		}
-	}   
 ?>
 <?php include ('footer.php'); ?>
 <?php include ('global.js.php'); ?>

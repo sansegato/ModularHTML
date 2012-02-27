@@ -114,6 +114,17 @@ $(document).ready(function() {
 </script>	
 <!--@2.09.navigation-glossary-->
 
+<!--@2.10.calendar-picker-->
+<!-- Tema do jQueryUI usado:smoothness | arquivo css e imagens na pasta 'smoothness' -->
+<link rel="stylesheet" href="/js/modulos/smoothness/jquery-ui-1.8.17.custom.css" />
+<script src="/js/modulos/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#datepicker').datepicker();
+});
+</script>
+<!--@2.10.calendar-picker-->
+
 <!--@4.03.image-slideshow-->
 <script type="text/javascript" src="/js/modulos/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
@@ -270,6 +281,33 @@ $(document).ready(function() {
 });
 </script>
 <!--@5.10.rating-->
+
+<!--@7.01.modal-window-->
+<!-- Tema do jQueryUI usado :smoothness | arquivo css e imagens na pasta 'smoothness' -->
+<link rel="stylesheet" href="/js/modulos/smoothness/jquery-ui-1.8.17.custom.css" />
+<script src="/js/modulos/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){		
+	$('#dialog').dialog({
+		autoOpen: false,
+		modal: true,
+		width: 600,
+		buttons: {
+			"Ok": function() { 
+				$(this).dialog("close"); 
+			}, 
+			"Cancel": function() { 
+				$(this).dialog("close"); 
+			} 
+		}
+	});
+	$('#dialog_link').click(function(){
+		$('#dialog').dialog('open');
+		return false;
+	});
+});
+</script>
+<!--@7.01.modal-window-->
 
 <!--@8.09.form-select-action-->
 <script type="text/javascript">
