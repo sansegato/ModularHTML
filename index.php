@@ -14,13 +14,12 @@
 <div id="intro">
 	<p>ModularHTML é um guia de estilo para código HTML semântico e padronizado</p>
 	<div class="links">
-		<a title="Acessar" href="demo.php">Acessar</a>
-		<span>|</span>
-		<a title="Download" href="https://github.com/a2comunicacao/ModularHTML">Download</a>
+		<ul>
+			<li><a class="acessar" title="Acessar" href="demo.php">Acessar</a></li>
+			<li><a class="download" title="Download" href="https://github.com/a2comunicacao/ModularHTML">Download</a></li>
+		</ul>	
 	</div>
-	<div class="social-networks-share">
-		<div id="shareme" data-url="http://modularhtml.com.br/" data-text="Make your sharing widget with Sharrre (jQuery Plugin)"></div>
-	</div>
+	
 </div>
 
 <?php include ('footer.php'); ?>

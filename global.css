@@ -1,52 +1,75 @@
+/* Font Face */
+@font-face {
+	font-family: Aller;
+	src: url('fonts/Aller_Rg.ttf');
+}
+
+@font-face {
+	font-family: Aller;
+	font-weight: bold;
+	src: url('fonts/Aller_Rg.ttf');
+}
+
 /* @index */
 
 html {
 	/*border-top: 0.5em solid #0068a6;*/
 	background-color: #eee;
 }
-body {
-	background-color: #fefefe;
-	background: rgba(255,255,255,0.9);
-	margin: 1% 2.5%;
-	padding: 1% 2.5%;
+body { background: url(img/modular_background.jpg) repeat-x; }
+
+
+body.interna {
+	padding: 5% 2.5% 0;
 	font-size: 100%;
 	line-height: 1.875;
 	font-family: Arial;
 	color: #333;
-	border: 1px solid;
-	border-color: #ddd;
-	border-color: rgba(0, 0, 0, 0.13);
+	background: url(img/modular_background_interna.jpg)
 }
 
-h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 3% 0; margin:0; }
+#modulos {
+	background: #fff;
+	padding: 0% 2%;
+}
+
+h1#logo				{ width:100%; display:block; text-align:center; padding:6% 0 4% 0; margin:0; }
+h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%; margin:0; background: url(img/modular_background_logo.jpg) repeat-x;}
 .nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.5em; }
 .nome-modulo a		{ text-decoration:none; color:#449f91; }
 .nome-modulo a:hover{ color:#fff; background-color:#449f91; padding-left:1em; padding-right:1em; }
 
 .dica						{ display:block; text-align:center; color:#666; font-size:0.85em; margin-bottom:3em; }
 
-#intro 			{ margin: 5% 0; text-align: center; font-size: 1.4em; padding: 0 30%; line-height: 1.6; overflow:hidden; }
+#intro 	 { text-align: center; font-size: 1.4em; padding: 0 30%; line-height: 1.6; overflow:hidden; font-family: 'Aller', Verdana, Arial, sans-serif; }
+#intro p {font-size: 1.8em; color: #666666; text-shadow: 2px 2px 0 #FFFFFF; margin-bottom: 90px;}
+.links {}
+.links ul {}
+.links ul li { display: inline; list-style: none;}
+.links ul li a {color: #fff; text-decoration:none; background: url(img/modular_botao.jpg) no-repeat;}
+.links ul li a.acessar {padding: 20px 73px; }
+.links ul li a.download {padding: 20px 65px;margin-right: 35px;}
 
-.links a		{ padding:0.2em 0.5em; }
-.links a:hover,
-.links a:focus	{ color:#fff; background-color:#449f91; }
-.links span	{ color:#449f91; font-size:1.5em; }
+/*.links			{height: 62px; margin:10% 0 0 0;}
+.links a		{ padding:1.1em 5em 1em 3.6em; background: url(img/modular_botao.jpg) no-repeat; color: #fff; text-shadow: 2px 2px 0 #045045; text-decoration:none; margin-left: 30px; }
+.links a:hover		{ color: #ddd;}*/
 
-#intro div.social-networks-share	{ float: left; width: 100%; margin: 15% 0 0; text-align: center; }
-#intro div.social-networks-share #shareme { display: inline-block; }
-#intro .twitter { line-height: 2.1 ;}
+#social						{ text-align: center; font-size: 1.4em; padding: 0 44%; line-height: 1.6; overflow:hidden; margin: 2% 0; }
+#social div.social-networks-share		{ float: left; width: 100%; margin: 9% 0 0; text-align: center; }
+#social div.social-networks-share #shareme 	{ display: inline-block; }
+#social .twitter
+#social .buttons { }
+#menu { width: 96%; background: #067F6C; font-size: 0.8em; line-height: 1.4; padding: 1% 2%; z-index:999; }
+#menu.nav-fixed { width: 91%; top: 0; position: fixed; }
 
-#menu { width: 96%; background: #91D3C7; font-size: 0.8em; line-height: 1.4; padding: 1% 2%; z-index:999; }
-#menu.nav-fixed { width: 86%; top: 0; position: fixed; }
-
-.modulo 					{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
-.modulo.first				{ border-top: dotted 2px #ddd; }
+.modulo 			{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
+.modulo.last			{border-bottom: none;}
 .modulo .visualizacao		{ width: 65%; float: left; }
-.codigo						{ width:96%; padding:0 2%; }
-.modulo .info 				{ width: 30%; float: right; }
-.modulo .info p				{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
+.codigo				{ width:96%; padding:0 2%; }
+.modulo .info 			{ width: 30%; float: right; }
+.modulo .info p			{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
-.nome-modulo a				{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
+.nome-modulo a			{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
 .modulo .info p a:hover		{ background-color:#067f6c; color:#fff; }
 .modulo .info p.link		{ background:url(img/modulo.png) no-repeat scroll left center; }
 .modulo .info p.data		{ background:url(img/relogio.png) no-repeat scroll left center; font-size:12px; margin-top:1.2em; }
@@ -66,9 +89,26 @@ h1#logo				{ width:100%; display:block; text-align:center; padding:3% 0 3% 0; ma
 .modulo .info .css,
 .modulo .info .js{float:left; width:100%; display:none;}
 
-footer { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; }
-footer a:link, footer a:visited  { color: #666; }
+footer.homepage { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; background: #444444; height:261px; margin: 5% 0 0; border-top: 3px solid #067e6c;}
+footer.homepage p.sobre {color: #e5e5e5; font-size: 1.3em; font-family: 'Aller', Verdana, Arial, sans-serif;}
+footer.homepage p.sobre a {color: #e5e5e5; text-decoration: underline;}
+footer.homepage p.sobre img { height: 25px; width: 111px;}
+footer.homepage a:link, footer a:visited  { color: #666; }
 
+footer.interna { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; background: #444444; height:140px;  border-top: 3px solid #067e6c;}
+footer.interna p.sobre {color: #e5e5e5; font-size: 1.3em; font-family: 'Aller', Verdana, Arial, sans-serif;}
+footer.interna p.sobre a {color: #e5e5e5; text-decoration: underline;}
+footer.interna p.sobre img { height: 25px; width: 111px;}
+footer.interna a:link, footer a:visited  { color: #666; }
+
+/* Footer dos m—dulos */
+footer {
+text-align: center;
+width: 100%;
+font-size: 0.8em;
+clear: both;
+color: #999;
+}
 #avatares a:hover img { 
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);

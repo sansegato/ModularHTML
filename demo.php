@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="global.css">
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
 </head>
-<body>
+<body class="interna">
 
-<?php include ('header.php'); ?>
+<?php include ('header_interna.php'); ?>
 
 <span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
 
@@ -128,7 +128,7 @@
 	}   
 ?>
 </div>
-<?php include ('footer.php'); ?>
+<?php include ('footer_interna.php'); ?>
 <?php include ('global.js.php'); ?>
 <!-- scripts -->
 <script type="text/javascript" src="js/jquery.jknavigable.js"></script>
@@ -147,7 +147,10 @@ $(document).ready(function() {
 	$('.modulo').jknavigable();
 	
 	// 	borda 1ºmodulo
-	$('.modulo').first().addClass('first');	
+	$('.modulo').first().addClass('first');
+	
+	// 	borda último modulo
+	$('.modulo').last().addClass('last');	
 	
 	//	Abas	
 	$('.info div.html').show();		

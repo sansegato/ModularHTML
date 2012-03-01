@@ -1,12 +1,6 @@
 
-	<footer class="homepage">
+	<footer class="interna">
 	
-	
-	<div id="social">
-	<div class="social-networks-share">
-		<div id="shareme" data-url="http://modularhtml.com.br/" data-text="Make your sharing widget with Sharrre (jQuery Plugin)"></div>
-	</div>
-	</div>
 	
 </div>
 			
