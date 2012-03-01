@@ -123,12 +123,8 @@
 		}
 	}	
 ?>
-<<<<<<< HEAD
 </div>
 <?php include ('footer_interna.php'); ?>
-=======
-<?php include ('footer.php'); ?>
->>>>>>> c576bc9cb18741dd665300cf506a09391fd0fdc0
 <?php include ('global.js.php'); ?>
 <!-- scripts -->
 <script type="text/javascript" src="js/jquery.jknavigable.js"></script>

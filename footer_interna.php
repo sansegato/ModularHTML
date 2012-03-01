@@ -1,6 +1,4 @@
-
-	<footer class="interna">
-	
+<footer class="modular">
 	
 </div>
 			

@@ -44,21 +44,28 @@ h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%
 #intro 	 { text-align: center; font-size: 1.4em; padding: 0 30%; line-height: 1.6; overflow:hidden; font-family: 'Aller', Verdana, Arial, sans-serif; }
 #intro p {font-size: 1.8em; color: #666666; text-shadow: 2px 2px 0 #FFFFFF; margin-bottom: 90px;}
 .links {}
-.links ul {}
-.links ul li { display: inline; list-style: none;}
-.links ul li a {color: #fff; text-decoration:none; background: url(img/modular_botao.jpg) no-repeat;}
-.links ul li a.acessar {padding: 20px 73px; }
-.links ul li a.download {padding: 20px 65px;margin-right: 35px;}
+.links ul { margin: 0px; padding: 0px; }
+.links ul li { display: inline-block; list-style: none; margin: 0px 0px 10px; }
+.links ul li a {
+	color: #fff;
+	text-decoration:none;
+	background: url(img/modular_botao.jpg) no-repeat;
+	display: block;
+	width:208px;
+	height:47px;
+	padding-top:15px;
 
-/*.links			{height: 62px; margin:10% 0 0 0;}
-.links a		{ padding:1.1em 5em 1em 3.6em; background: url(img/modular_botao.jpg) no-repeat; color: #fff; text-shadow: 2px 2px 0 #045045; text-decoration:none; margin-left: 30px; }
-.links a:hover		{ color: #ddd;}*/
-
-#social						{ text-align: center; font-size: 1.4em; padding: 0 44%; line-height: 1.6; overflow:hidden; margin: 2% 0; }
-#social div.social-networks-share		{ float: left; width: 100%; margin: 9% 0 0; text-align: center; }
-#social div.social-networks-share #shareme 	{ display: inline-block; }
-#social .twitter
-#social .buttons { }
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.links ul li a:hover{
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter:alpha(opacity=75);
+}
 #menu { width: 96%; background: #067F6C; font-size: 0.8em; line-height: 1.4; padding: 1% 2%; z-index:999; }
 #menu.nav-fixed { width: 91%; top: 0; position: fixed; }
 
@@ -92,26 +99,33 @@ h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%
 .modulo .info .css,
 .modulo .info .js{float:left; width:100%; display:none;}
 
-footer.homepage { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; background: #444444; height:261px; margin: 5% 0 0; border-top: 3px solid #067e6c;}
-footer.homepage p.sobre {color: #e5e5e5; font-size: 1.3em; font-family: 'Aller', Verdana, Arial, sans-serif;}
-footer.homepage p.sobre a {color: #e5e5e5; text-decoration: underline;}
-footer.homepage p.sobre img { height: 25px; width: 111px;}
-footer.homepage a:link, footer a:visited  { color: #666; }
-
-footer.interna { text-align: center; width: 100%; font-size: 0.8em; clear: both; color: #999; background: #444444; height:140px;  border-top: 3px solid #067e6c;}
-footer.interna p.sobre {color: #e5e5e5; font-size: 1.3em; font-family: 'Aller', Verdana, Arial, sans-serif;}
-footer.interna p.sobre a {color: #e5e5e5; text-decoration: underline;}
-footer.interna p.sobre img { height: 25px; width: 111px;}
-footer.interna a:link, footer a:visited  { color: #666; }
-
-/* Footer dos m—dulos */
-footer {
-text-align: center;
-width: 100%;
-font-size: 0.8em;
-clear: both;
-color: #999;
+footer.modular {
+	text-align: center; 
+	width: 100%; 
+	font-size: 0.8em; 
+	clear: both; 
+	color: #999; 
+	background: #444444; 
+	margin: 5% 0 0; 
+	border-top: 3px solid #067e6c; 
+	padding-bottom:1%
 }
+footer.modular .sobre {color: #e5e5e5; font-size: 1.3em; font-family: 'Aller', Verdana, Arial, sans-serif;}
+footer.modular .sobre a {color: #e5e5e5; text-decoration: underline;}
+footer.modular .sobre img { height: 25px; width: 111px;}
+footer.modular a:link,
+footer a:visited 		 { color: #666; }
+
+#social { text-align: center; font-size: 1.4em; line-height: 1.6; overflow:hidden; margin: 1% 0; }
+#social .button { margin-right: 10px; }
+#social .button.googleplus { margin-top: 2px; }
+#social .button.facebook { margin-right: 20px; }
+#social .social-networks-share {
+	width: 235px;
+	margin: 0 auto;
+	float: none;
+}
+
 #avatares a:hover img { 
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);

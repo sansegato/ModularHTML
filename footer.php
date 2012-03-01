@@ -1,5 +1,5 @@
 
-	<footer class="homepage">
+	<footer class="modular">
 	
 	
 	<div id="social">
