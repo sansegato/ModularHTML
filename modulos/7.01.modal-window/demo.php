@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-	<title>audio-player</title>
+	<title>modal-window</title>
 	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -15,9 +15,7 @@
 </head>
 <body>
 	<div id="main">
-		<div class="visualizacao">
-			<?php include ('index.php'); ?>
-		</div>
+		<?php include ('index.php'); ?>
 	</div>
 	<?php include('../../global.js.php'); ?>
 </body>
