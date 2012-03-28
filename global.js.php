@@ -236,25 +236,35 @@ $(document).ready(function() {
 
 
 <!--@5.08.01.audio-player-->
-<script src="/js/modulos/jquery.jplayer.min.js"></script>
+<script src="/js/modulos/audio/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-
 	$("#jquery_jplayer_1").jPlayer({
-			ready: function () {
-				$(this).jPlayer("setMedia", {
-					m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-					oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:"/js/modulos/audio/musica.mp3"
+			});
+		},
+		play: function() { // To avoid both jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+		repeat: function(event) { // Override the default jPlayer repeat event handler
+			if(event.jPlayer.options.loop) {
+				$(this).unbind(".jPlayerRepeat").unbind(".jPlayerNext");
+				$(this).bind($.jPlayer.event.ended + ".jPlayer.jPlayerRepeat", function() {
+					$(this).jPlayer("play");
 				});
-			},
-			play: function() { // To avoid both jPlayers playing together.
-				$(this).jPlayer("pauseOthers");
-			},
-			swfPath: "http://www.jplayer.org/2.0.0/js/",
-			supplied: "m4a, oga",
-			cssSelectorAncestor: "#jp_container_1",
-			wmode: "window"
-		});
+			} else {
+				$(this).unbind(".jPlayerRepeat").unbind(".jPlayerNext");
+				$(this).bind($.jPlayer.event.ended + ".jPlayer.jPlayerNext", function() {
+					$("#jquery_jplayer_2").jPlayer("play", 0);
+				});
+			}
+		},
+		swfPath: "/js/modulos/audio",
+		supplied: "mp3",
+		wmode: "window"
+	});
 });
 </script>
 <!--@5.08.01.audio-player-->
