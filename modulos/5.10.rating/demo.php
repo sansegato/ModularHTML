@@ -14,7 +14,7 @@
 	
 
 </head>
-<body>
+<body class="exemplo">
 	<div id="main">
 		<?php include ('index.php'); ?>
 	</div>

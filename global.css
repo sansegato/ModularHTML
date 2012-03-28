@@ -13,12 +13,10 @@
 /* @index */
 
 html {
-	/*border-top: 0.5em solid #0068a6;*/
 	background-color: #eee;
 }
 body { background: url(img/modular_background.jpg) repeat-x; }
-
-
+body.exemplo { background-image:none; }
 body.interna {
 	padding: 5% 2.5% 0;
 	font-size: 100%;

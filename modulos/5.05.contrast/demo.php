@@ -16,7 +16,7 @@
 	<script src="../../js/libs/modernizr-2.0.6.min.js"></script>
 
 </head>
-<body>
+<body class="exemplo">
 	<div id="main">
 		<?php include ('index.php'); ?>
 	</div>
