@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
 <meta charset="iso-8859-1">
+<meta name="description" content="ModularHTML é um guia de estilo para código HTML semântico e padronizado">
+<meta name="keywords" content="html, css, js, jQuery, web, modular, grid, framework, código, standards, semântico, estilo, desenvolvimento, front-end, design"> 
+<meta name="author" content="A2Comunicação"> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>ModularHTML</title>	
 <script type="text/javascript" src="js/libs/modernizr-2.0.6.min.js"></script>
