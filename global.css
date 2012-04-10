@@ -69,6 +69,7 @@ h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%
 #menu { width: 96%; background: #067F6C; font-size: 0.8em; line-height: 1.4; padding: 1% 2%; z-index:999; }
 #menu.nav-fixed { width: 91%; top: 0; position: fixed; }
 
+
 .modulo 			{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.last			{border-bottom: none;}
 .modulo .visualizacao		{ width: 65%; float: left; }
