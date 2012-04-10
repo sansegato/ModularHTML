@@ -1,1 +1,0 @@
-<p class="legend">Inserir aqui a legenda</p>

@@ -13,8 +13,8 @@
 	<script src="../../js/libs/modernizr-2.0.6.min.js"></script>
 
 </head>
-<body>
-	<div id="main" style="max-width:650px;">
+<body class="exemplo">
+	<div id="main" style="max-width:650px; margin: 0 auto;">
 		<?php include ('index.php'); ?>
 	</div>
 	<?php include('../../global.js.php'); ?>
