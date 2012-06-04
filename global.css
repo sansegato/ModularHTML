@@ -247,9 +247,7 @@ Amarelo				#dfb417
 /*@2.02.navigation-vertical-dropdown*/
 
 /*@2.03.navigation-pagination*/
-.pagination {
-	text-align:center;
-}
+.pagination {text-align:center;}
 .pagination a, 
 .pagination span {
 	display:inline-block;
