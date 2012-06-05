@@ -11,52 +11,67 @@
 <link rel="alternate stylesheet" media="all" href="/js/modulos/contrast.css" title="contraste" />
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="global.css">
+
+
+<script type='text/javascript'src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	/*	$('#modulos .modulo').each(function(e){
+			var id = $(this).attr('id');
+			//console.log(id+e);
+			$(this).addClass('m'+e);
+
+			$('.m'+e).children('.info').children('.html').children().prepend('<img class="loader" src="/img/loader.gif"/>');
+
+			setTimeout( function(){
+				$('.loader').remove();
+				$('.m'+e).children('.info').children('.html').children().load('/modulos/'+id+'/index.php');
+			}, 8000);		
+		});*/
+    });
+</script>
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
+
 </head>
 <body class="interna">
-
 <?php include ('header_interna.php'); ?>
 
 <span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
-
-<div id="menu">
-
-<select id="shortcuts" class="select-form">
-	<?php
-		$dir = new DirectoryIterator( 'modulos' );
-		date_default_timezone_set('America/Sao_Paulo');	
-		
-		foreach($dir as $file ){
-			if (!$file->isDot() && $file->isDir()){
-				$dname = $file->getFilename();	
-				print "<option value='#$file'>$file</option>";
-						
-			}
-		}	
-		foreach($dir as $file ){
-			if (!$file->isDot() && $file->isFile()){
-			}
-		}   
-	?>
-</select> 
-
-</div>
-
-<div id="modulos">
-<?php
-	$dir = new DirectoryIterator( 'modulos' );
+<?php 
+	////////////////////////////////////////////////////////////////////////////////
 	date_default_timezone_set('America/Sao_Paulo');	
 	
-	$css 		= file_get_contents('global.css');	
+	$pasta		= glob( 'modulos/*.*' );
+	$qtd		= 5;
+	$atual 		= (isset($_GET['pg'])) ? intval($_GET['pg']) : 1;
+	$pagPasta 	= array_chunk($pasta, $qtd);
+	$contar 	= count($pagPasta);
+    $resultado 	= $pagPasta[$atual-1];
+
+    $css 		= file_get_contents('global.css');	
 	$js 		= file ('global.js.php');	
 	$jsConteudo = implode ('', file ('global.js.php'));
-	
-	foreach($dir as $file ){
-		if (!$file->isDot() && $file->isDir()){
-			$dname = $file->getFilename();
+	////////////////////////////////////////////////////////////////////////////////
+?>
+
+<div id="menu">
+	<select id="shortcuts" class="select-form">
+		<?php
+			foreach($resultado as $valor){
+				$nome = substr($valor, 8);	
+				print "<option value='#$nome'>$nome</option>";						
+			}	  
+		?>
+	</select>
+</div>
+<div id="modulos">
+<?
+    foreach($resultado as $valor){
+    		$file = substr($valor, 8);
+    		//$dname = $file->getFilename();
 			
-			$marcacaoCSS = "/*@".$dname."*/";		
-			$marcacaoJS = "<!--@".$dname."-->";		
+			$marcacaoCSS = "/*@".$file."*/";		
+			$marcacaoJS = "<!--@".$file."-->";		
 
 			print "<div class='modulo' id='$file'>";
 			print "<div class='visualizacao'>";
@@ -69,42 +84,41 @@
 			print "<ul class='abas'>";
 			print "<li class='aba-html'><a href='#'>Html</a></li>";
 			
-			//Adiciona aba o CSS se Existir
-			if(preg_match("/".$dname."/",$css)){
+			//Adiciona aba do CSS se Existir
+			if(preg_match("/".$file."/",$css)){
 				print "<li class='aba-css'><a href='#'>Css</a></li>";						
-			} else {}	
-			//Adiciona aba o JS se Existir
-			if(preg_match("/".$dname."/", $jsConteudo)){
+			}	
+			//Adiciona aba do JS se Existir
+			if(preg_match("/".$file."/", $jsConteudo)){
 				print "<li class='aba-js'><a href='#'>JS</a></li>";						
-			} else {}	
+			}	
 			
 			print "</ul>";		
 			print "<div class='html'>";			
 			print "<pre class='brush: html;'>";
-			//include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
 			include($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php");
 			print "</pre>";	
 			print "</div>";	
 			
 			//Adiciona o CSS se Existir	
-			if(preg_match("/".$dname."/",$css)){
+			if(preg_match("/".$file."/",$css)){
 				$addCss = explode($marcacaoCSS, $css);
 				print "<div class='css'>";
 				print "<pre class='brush: css;'>";
 				echo $addCss[1];
 				print "</pre>";
 				print "</div>";
-			} else {}	
+			}
 	
 			//Adiciona o JS se Existir
-			if(preg_match("/".$dname."/", $jsConteudo)){
+			if(preg_match("/".$file."/", $jsConteudo)){
 				$addJs = explode ($marcacaoJS, $jsConteudo);
 				print "<div class='js'>";
 				print "<pre class='brush: js;'>";
 				echo htmlspecialchars($addJs[1]);
 				print "</pre>";
 				print "</div>";
-			} else {}	
+			}
 			
 			print "<p class='link'><a href='modulos/$file/demo.php'>$file</a></p>";
 			print "<p class='data'><span>Atualizado em:</span> ".date ("d/m/Y H:i:s", filemtime($_SERVER['DOCUMENT_ROOT']."/modulos/$file/index.php"))."</p>";
@@ -118,14 +132,27 @@
 					print "</p>";
 				}
 				fclose ($abre);				
-			} else {}
+			}
 			
 			print "</div>";
-			print "</div>";			
-			
-		}
-	}	
+			print "</div>";  		
+
+    }
+
+    echo '<div class="pagination">';
+    for($i = 1; $i <= $contar; $i++){
+    	if($i == $atual){
+    		printf('<a class="active" href="#">%s</a>', $i);
+    	}else{
+    		printf('<a href="?pg=%s"> %s </a>', $i, $i);
+    	}
+    }
+    echo '</div>';
+    ////////////////////////////////////////////////////////////////////////////////
+
 ?>
+
+
 </div>
 <?php include ('footer_interna.php'); ?>
 <?php include ('global.js.php'); ?>
