@@ -32,8 +32,8 @@ body.interna {
 }
 
 h1#logo				{ width:100%; display:block; text-align:center; padding:6% 0 4% 0; margin:0; }
-h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%; margin:0; background: url(img/modular_background_logo.jpg) repeat-x;}
-.nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.5em; }
+h1#logointerna		{ width:100%; display:block; text-align:center; padding: 0 0 4%; margin:0; background: url(img/modular_background_logo.jpg) repeat-x;}
+.nome-modulo		{ margin:0 0 1em; padding:0; line-height:1em; font-size:1.4em; letter-spacing:-1px;}
 .nome-modulo a		{ text-decoration:none; color:#449f91; }
 .nome-modulo a:hover{ color:#fff; background-color:#449f91; padding-left:1em; padding-right:1em; }
 
@@ -67,11 +67,12 @@ h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%
 #menu { width: 96%; background: #067F6C; font-size: 0.8em; line-height: 1.4; padding: 1% 2%; z-index:999; }
 #menu.nav-fixed { width: 91%; top: 0; position: fixed; }
 
+
 .modulo 			{ clear: both; overflow: hidden; width:100%; border-bottom: dotted 2px #ddd; padding:1.5em 0; }
 .modulo.last			{border-bottom: none;}
-.modulo .visualizacao		{ width: 65%; float: left; }
+.modulo .visualizacao		{ width: 60%; float: left; }
 .codigo				{ width:96%; padding:0 2%; }
-.modulo .info 			{ width: 30%; float: right; }
+.modulo .info 			{ width: 35%; float: right; }
 .modulo .info p			{ display:block; width:93%; padding: 0 1% 0 25px; float:left; font-size:14px; color:#067f6c; margin:1em 0 0; }
 .modulo .info p a,
 .nome-modulo a			{ /*Transição*/	transition:all 0.5s ease; -o-transition:all 0,5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
@@ -96,6 +97,8 @@ h1#logointerna			{ width:100%; display:block; text-align:center; padding: 0 0 4%
 .modulo .info .html,
 .modulo .info .css,
 .modulo .info .js{float:left; width:100%; display:none;}
+
+.modulo .info .loader{margin: 0 auto; padding:20px 0; display: block;}
 
 footer.modular {
 	text-align: center; 
@@ -133,6 +136,9 @@ footer a:visited 		 { color: #666; }
 }
 
 .modulo .syntaxhighlighter { font-size: 0.9em !important; max-height:300px; overflow-y:scroll; }
+
+.pagination{padding: 20px; border-top:2px dotted #DDD;}
+.pagination a{font-size:12px; padding:5px;}
 /* @end index */
 
 /* CORES */
@@ -246,11 +252,9 @@ Amarelo				#dfb417
 /*@2.02.navigation-vertical-dropdown*/
 
 /*@2.03.navigation-pagination*/
-#pagination {
-	text-align:center;
-}
-#pagination a, 
-#pagination span {
+.pagination {text-align:center;}
+.pagination a, 
+.pagination span {
 	display:inline-block;
 	background-color: #c1dfda;
 	border: 1px solid #82bfb5;
@@ -259,8 +263,8 @@ Amarelo				#dfb417
 	color:#067f6c;
 	margin:0px 5px;
 }
-#pagination a:hover, 
-#pagination .active {
+.pagination a:hover, 
+.pagination .active {
 	background-color: #449f91;
 	color:#fff;
 }

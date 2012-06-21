@@ -156,7 +156,7 @@ $(window).load(function() {
 </script>
 <!--@5.01.tweets-->
 	
-<!--@5.02.social-networks-share-->
+<!--@5.02.widget-social-networks-share-->
 <script src="/js/modulos/jquery.sharrre-1.2.0.min.js"></script>
 <script>
 $('#shareme').sharrre({
@@ -183,7 +183,7 @@ $('#shareme').sharrre({
 	enableTracking: true
 });
 </script>
-<!--@5.02.social-networks-share-->
+<!--@5.02.widget-social-networks-share-->
 
 
 <!--@5.03.control-font-size-->
