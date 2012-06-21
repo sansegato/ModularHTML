@@ -1714,7 +1714,7 @@ button[type=submit] {
 }
 button[type=submit]:hover	{
 	background-color:#82bfb5;
-	color:#fff;
+	color:#ccc;
 }
 /*@8.20.form-button*/
 
