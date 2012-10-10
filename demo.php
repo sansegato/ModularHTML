@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
 <meta charset="iso-8859-1">
-<meta name="description" content="ModularHTML é um guia de estilo para código HTML semântico e padronizado">
-<meta name="keywords" content="html, css, js, jQuery, web, modular, grid, framework, código, standards, semântico, estilo, desenvolvimento, front-end, design"> 
-<meta name="author" content="A2Comunicação"> 
+<meta name="description" content="ModularHTML ï¿½ um guia de estilo para cï¿½digo HTML semï¿½ntico e padronizado">
+<meta name="keywords" content="html, css, js, jQuery, web, modular, grid, framework, cï¿½digo, standards, semï¿½ntico, estilo, desenvolvimento, front-end, design"> 
+<meta name="author" content="A2Comunicaï¿½ï¿½o"> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>ModularHTML</title>
 <!-- css contrast -->
@@ -33,10 +33,10 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/js/syntax/syntax.php'); ?>
 
 </head>
-<body class="interna">
+<body class="interna"> <h2>TEste</h2>
 <?php include ('header_interna.php'); ?>
 
-<span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a página para baixo ou para cima</span>
+<span class="dica"><strong>Dica:</strong> Use as teclas "J" e "K" para mover a pï¿½gina para baixo ou para cima</span>
 <?php 
 	////////////////////////////////////////////////////////////////////////////////
 	date_default_timezone_set('America/Sao_Paulo');	
@@ -162,13 +162,13 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-	//	navegação
+	//	navegaï¿½ï¿½o
 	$('.modulo').jknavigable();
 	
-	// 	borda 1ºmodulo
+	// 	borda 1ï¿½modulo
 	$('.modulo').first().addClass('first');
 	
-	// 	borda último modulo
+	// 	borda ï¿½ltimo modulo
 	$('.modulo').last().addClass('last');	
 	
 	//	Abas	
